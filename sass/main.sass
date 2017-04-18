@@ -1,0 +1,190 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "GothamProRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.header
+	padding-top: 9px
+	padding-bottom: 50px
+	&__logo
+	&__nav
+		padding-top: 10px
+	&__phone
+		padding-top: 15px
+
+.page
+	&__index-slider
+
+.logo
+	padding-left: 35px
+	&__link
+		position: relative
+		width: 191px
+		height: 55px
+		display: block
+		img
+			display: block
+			width: 100%
+			height: 100%
+		span
+			display: inline-block
+			position: absolute
+			right: -2px
+			bottom: 0
+			color: #323232
+			font-size: 9px
+			text-transform: uppercase
+			letter-spacing: 0.25px
+
+.nav
+	font-size: 0
+	&__item
+		display: inline-block
+		position: relative
+	&__link
+		font-family: "GothamProBold", sans-serif
+		color: #323232
+		font-size: 14px
+		line-height: 50px
+		padding: 0 30px
+		height: 50px
+		display: block
+		@include transition(all 0.5s ease-in-out)
+		&:hover, &-active
+			background-color: #0d8eee
+			text-decoration: none
+			color: #fff
+
+.sub-nav
+	background-color: #0d8eee
+	position: absolute
+	left: 0
+	top: 50px
+	z-index: 100
+	display: none
+	&-2
+		left: 252px
+		top: 0
+	&__item
+	&__link
+		position: relative
+		display: block
+		background-color: #0d8eee
+		height: 50px
+		width: 252px
+		&:hover
+			background-color: #0186e0
+		&-active
+			background-color: #0186e0
+		&-arrow
+			display: block
+			font-size: 14px
+			color: #fff
+			position: absolute
+			right: 30px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+		span
+			color: #fff
+			font-size: 14px
+			position: absolute
+			display: block
+			left: 25px
+			right: 25px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+
+.phone
+	text-align: right
+	padding-right: 35px
+	&__number
+		color: #323232
+		font-size: 16px
+		font-family: "GothamProBold", sans-serif
+		display: inline-block
+		&:hover
+			color: #323232
+			text-decoration: none
+	&__feedback
+		color: #323232
+		font-size: 14px
+		text-decoration: underline
+		display: inline-block
+		&:hover
+			text-decoration: none
+			color: #323232
+
+.index-slider
+	height: 390px
+	position: relative
+	&__description
+	&__wrapper
+		height: 390px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		p
+			color: #323232
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.25px
+			cursor: default
+	&__title
+		padding-bottom: 25px
+		display: block
+		width: 100%
+		h2
+			color: #323232
+			font-size: 40px
+			line-height: 45px
+			font-family: "GothamProBlack", sans-serif
+			text-transform: uppercase
+			cursor: default
+	&__img
+		text-align: center
+		img
+			display: inline-block
+			max-width: 100%
+			max-height: 100%
+	.slick-dots
+		width: 10px
+		position: absolute
+		right: -36px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		li
+			padding: 9px 0
+			display: block
+			button
+				width: 10px
+				height: 10px
+				display: block
+				text-indent: -9999px
+				padding: 0
+				margin: 0
+				background-color: #c5e4fb
+				border: none
+				border-radius: 50%
+				-webkit-border-radius: 50%
+		.slick-active
+			button
+				background-color: #0088ed
