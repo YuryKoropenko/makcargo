@@ -24,6 +24,8 @@ body
 
 .page
 	&__index-slider
+		position: relative
+	&__calculation
 
 .logo
 	padding-left: 35px
@@ -126,6 +128,49 @@ body
 			text-decoration: none
 			color: #323232
 
+.index-links
+	position: absolute
+	width: 37px
+	left: -63px
+	top: 50%
+	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%)
+	z-index: 10
+	&__item
+		padding: 5px 0
+	&__link
+		width: 37px
+		height: 37px
+		display: block
+		border: 1px solid #0088ed
+		background-color: #0088ed
+		padding-left: 8px
+		padding-top: 8.5px
+		position: relative
+		&:hover
+			background-color: transparent
+			.index-links__icon
+				background-position-x: -21px !important
+		span
+			height: 28px
+			line-height: 28px
+			background-color: #0088ed
+			display: block
+			position: absolute
+			top: 4px
+			padding: 0 14px
+			font-size: 12px
+			color: #fff
+			letter-spacing: 0.25px
+			left: 36px
+			display: none
+	&__icon
+		width: 19px
+		height: 18px
+		display: block
+		background-image: url(../img/icon/sprite.png)
+		background-repeat: no-repeat
+
 .index-slider
 	height: 390px
 	position: relative
@@ -159,11 +204,12 @@ body
 			text-transform: uppercase
 			cursor: default
 	&__img
-		text-align: center
+		text-align: left
+		position: relative
 		img
 			display: inline-block
-			max-width: 100%
-			max-height: 100%
+			width: auto
+			height: 100%
 	.slick-dots
 		width: 10px
 		position: absolute
@@ -188,3 +234,182 @@ body
 		.slick-active
 			button
 				background-color: #0088ed
+
+.cg-active
+	&::before
+		background-position: right center !important
+
+.calculation
+	position: relative
+	&-geo
+		&::before
+			content: ''
+			display: block
+			width: 14px
+			height: 19px
+			background-image: url(../img/icon/geo.png)
+			background-repeat: no-repeat
+			background-position: left center
+			position: absolute
+			left: 19px
+			top: 50%
+			margin-top: -9.5px
+	&__city
+		height: 36px
+		border-radius: 18px
+		border: 1px solid #323232
+		padding-left: 40px
+		padding-right: 40px
+		vertical-align: middle
+		display: block
+		width: 100%
+		font-size: 12px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		&::-webkit-input-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&:-moz-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&::-moz-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&:-ms-input-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&:focus
+			border-color: #0088ed
+			color: #0088ed
+			&::-webkit-input-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+			&:-moz-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+			&::-moz-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+			&:-ms-input-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+	&__places
+		height: 36px
+		border-radius: 18px
+		border: 1px solid #323232
+		padding-left: 53px
+		padding-right: 19px
+		text-align: right
+		vertical-align: middle
+		display: block
+		width: 60%
+		font-size: 12px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		font-family: "GothamProBold", sans-serif
+		letter-spacing: 0.25px
+		padding-bottom: 1.1px
+	&-pl
+		position: relative
+		span
+			position: absolute
+			left: 19px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			color: #323232
+			font-size: 12px
+			letter-spacing: 0.25px
+	&__value
+		display: block
+		margin-top: 8px
+		height: 20px
+		border: none
+		border-bottom: 1px solid #323232
+		border-top: 1px solid transparent
+		font-size: 12px
+		color: #008be9
+		&-wp
+			display: inline-block
+			position: relative
+		&::-webkit-input-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&:-moz-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&::-moz-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&:-ms-input-placeholder
+			color: #323232
+			font-size: 12px
+			opacity: 1
+		&:focus
+			border-bottom-color: #0088ed
+			color: #0088ed
+			&::-webkit-input-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+			&:-moz-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+			&::-moz-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+			&:-ms-input-placeholder
+				color: #0088ed
+				font-size: 12px
+				opacity: 1
+	&-tr
+		font-size: 11.69px
+		color: #323232
+		.calculation__value
+			display: inline-block
+			position: relative
+		span
+			display: inline-block
+			padding-left: 5px
+			padding-right: 5px
+	&__button
+		height: 36px
+		line-height: 36px
+		background-color: #008be9
+		text-align: center
+		color: #fff
+		font-size: 12px
+		letter-spacing: 0.25px
+		display: block
+		width: 100%
+		border-radius: 18px
+		&:hover
+			text-decoration: none
+			color: #fff
+		&:focus, &:active
+			text-decoration: none
+			color: #fff
+	&__text
+		position: absolute
+		top: 30px
+		left: 2px
+		display: block
+		font-size: 8px
+		letter-spacing: 0.25px
+		color: #008be9
+		display: none
