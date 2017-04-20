@@ -29,4 +29,11 @@ $(document).ready(function() {
 	}).blur(function() {
 		$(this).parent('.calculation-geo').removeClass('cg-active')
 	});
+	$('.calculation__value').on('input', function() {
+		if($(this).val() != '') {
+			$(this).parent().children('.calculation__text').show();
+		} else {
+			$(this).parent().children('.calculation__text').hide();
+		}
+	});
 });

@@ -5,4 +5,11 @@ $(document).ready(function() {
 		arrows: false,
 		fade: true
 	});
+
+	$('.promotions__slider').slick({
+		arrows: false,
+		slidesToShow: 1,
+		centerMode: true,
+		centerPadding: '150px'
+	});
 });

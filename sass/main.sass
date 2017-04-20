@@ -9,6 +9,7 @@ body
 	line-height: 1.25
 	font-family: "GothamProRegular", sans-serif
 	overflow-x: hidden
+	background-color: #f2f4f5
 
 .hidden
 	display: none
@@ -16,16 +17,23 @@ body
 .header
 	padding-top: 9px
 	padding-bottom: 50px
+	background-color: #fff
 	&__logo
 	&__nav
 		padding-top: 10px
 	&__phone
 		padding-top: 15px
 
+.wht
+	background-color: #fff
+
 .page
 	&__index-slider
 		position: relative
 	&__calculation
+	&__advantages
+		padding-top: 40px
+		padding-bottom: 64px
 
 .logo
 	padding-left: 35px
@@ -413,3 +421,203 @@ body
 		letter-spacing: 0.25px
 		color: #008be9
 		display: none
+
+.advantages
+	padding: 0 20px
+	&__img
+		height: 95px
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		img
+			display: block
+			max-height: 100%
+			max-width: 100% 
+	&__title
+		display: block
+		text-align: center
+		h3
+			display: inline-block
+			font-size: 12px
+			line-height: 18px
+			color: #323232
+			font-family: "GothamProBold", sans-serif
+			text-transform: uppercase
+	&__description
+		text-align: center
+		p
+			display: inline
+			color: #323232
+			font-size: 12px
+			line-height: 18px
+
+.promotions
+	&__title
+		text-align: center
+		padding-bottom: 60px
+		b
+			color: #323232
+			font-size: 35px
+			text-transform: uppercase
+			display: inline-block
+			font-family: "GothamProBold", sans-serif
+			letter-spacing: 0.25px
+	&__slider
+		height: 352px
+	&__item
+		height: 352px
+	&__first
+		border: 1px solid #d0d0d0
+		padding: 22px 30px
+	.column-1
+		padding-top: 10px
+		b
+			color: #323232
+			font-size: 14px
+			letter-spacing: 0.25px
+			line-height: 19px
+			text-transform: uppercase
+			font-family: "GothamProBold", sans-serif
+	.column-2
+		text-align: center
+		padding-top: 9px
+		span
+			color: #323232
+			font-size: 14px
+			line-height: 19px
+			letter-spacing: 0.25px
+			font-family: "GothamProBold", sans-serif
+			display: inline-block
+			white-space: nowrap
+			strong
+				color: #008be9
+				font-size: 20px
+				line-height: 19px
+				font-family: "GothamProBold", sans-serif
+				letter-spacing: 0.25px
+	.column-3
+		padding-top: 8px
+		text-align: center
+		input
+			height: 24px
+			display: inline-block
+			border: none
+			border-bottom: 1px solid #989898
+			font-size: 14px
+			color: #323232
+			letter-spacing: 0.25px
+			max-width: 146px
+			&::-webkit-input-placeholder
+				color: #323232
+				font-size: 10px
+			&:-moz-placeholder
+				color: #323232
+				font-size: 10px
+			&::-moz-placeholder
+				color: #323232
+				font-size: 10px
+			&:-ms-input-placeholder
+				color: #323232
+				font-size: 10px
+			&:focus
+				border-bottom-color: #323232
+	.column-4
+		text-align: center
+		a
+			max-width: 112px
+			display: inline-block
+			height: 40px
+			background-color: transparent
+			color: #008be9
+			font-size: 14px
+			line-height: 38px
+			font-family: "GothamProBold", sans-serif
+			letter-spacing: 0.25px
+			text-align: center
+			border: 1px solid #008be9
+			border-radius: 20px
+			padding: 0 18px
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: #008be9
+	&__img
+		display: block
+		width: auto
+		margin-left: 0
+		margin-right: -30px
+		height: 352px
+		overflow: hidden
+		img
+			min-height: 100%
+			min-width: 100%
+	&__zag
+		text-align: center
+		b
+			color: #fff
+			font-size: 14px
+			line-height: 19px
+			font-family: "GothamProBold", sans-serif
+			letter-spacing: 0.25px
+			display: inline-block
+			text-transform: uppercase
+	&__description
+		text-align: center
+		padding-top: 20px
+		p
+			color: #fff
+			font-size: 14px
+			line-height: 19px
+			letter-spacing: 0.25px
+			display: inline
+	&__input
+		text-align: center
+		input
+			width: 230px
+			display: inline-block
+			border: none
+			border-bottom: 1px solid #93c9f7
+			height: 36px
+			text-align: center
+			color: #fff
+			font-size: 12px
+			&::-webkit-input-placeholder
+				color: #fff
+				font-size: 10px
+			&:-moz-placeholder
+				color: #fff
+				font-size: 10px
+			&::-moz-placeholder
+				color: #fff
+				font-size: 10px
+			&:-ms-input-placeholder
+				color: #fff
+				font-size: 10px
+			&:focus
+				border-bottom-color: #fff
+	&__button
+		text-align: center
+		padding-top: 22px
+		a
+			height: 38px
+			display: inline-block
+			line-height: 38px
+			text-align: center
+			padding: 0 50px
+			background-color: #fff
+			border-radius: 19px
+			color: #008be9
+			font-size: 10px
+			text-transform: uppercase
+			font-family: "GothamProBold", sans-serif
+			letter-spacing: 0.25px
+			&:hover
+				text-decoration: none
