@@ -7,7 +7,7 @@ $(document).ready(function() {
 	});
 
 	$('.promotions__slider').slick({
-		arrows: false,
+		arrows: true,
 		slidesToShow: 1,
 		centerMode: true,
 		centerPadding: '150px'

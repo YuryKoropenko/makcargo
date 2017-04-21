@@ -27,6 +27,9 @@ body
 .wht
 	background-color: #fff
 
+.bht
+	background-color: #008be9
+
 .page
 	&__index-slider
 		position: relative
@@ -472,6 +475,51 @@ body
 			letter-spacing: 0.25px
 	&__slider
 		height: 352px
+		position: relative
+		.slick-slide
+			opacity: 0.3
+		.slick-active
+			opacity: 1
+		.slick-arrow
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			width: 57px
+			height: 57px
+			background-color: #fff
+			border: 1px solid #cbcbcb
+			z-index: 10
+			text-indent: -9999px
+			background-position: center center
+			background-repeat: no-repeat
+			&:hover
+				border-color: #008be9
+				&::after
+					background-position-x: right !important
+			&::after
+				content: ''
+				display: block
+				width: 6px
+				height: 10px
+				background-repeat: no-repeat
+				position: absolute
+				background-image: url(../img/icon/arrows.png)
+				top: 50%
+				margin-top: -5px
+				z-index: 11
+		.slick-prev
+			left: -29px
+			&::after
+				content: ''
+				background-position: left top
+				left: 24px
+		.slick-next
+			right: -29px
+			&::after
+				content: ''
+				background-position: left bottom
+				right: 24px
 	&__item
 		height: 352px
 	&__first
@@ -621,3 +669,89 @@ body
 			letter-spacing: 0.25px
 			&:hover
 				text-decoration: none
+	&__stock
+		text-align: center
+		padding-top: 70px
+		padding-bottom: 68px
+		a
+			display: inline-block
+			height: 54px
+			padding: 0 80px
+			line-height: 52px
+			color: #fff
+			border-radius: 27px
+			text-transform: uppercase
+			font-size: 12px
+			font-family: "GothamProBold", sans-serif
+			background-color: #0088ed
+			border: 1px solid #0088ed
+			&:hover
+				text-decoration: none
+				color: #0088ed
+				background-color: transparent
+
+.subscription
+	&__title
+		text-align: center
+		padding-top: 50px
+		b
+			color: #fff
+			text-transform: uppercase
+			font-size: 35px
+			font-family: "GothamProBold", sans-serif
+			letter-spacing: 0.25px
+			display: inline-block
+	&__description
+		padding: 30px 0
+		p
+			font-size: 14px
+			color: #fff
+			line-height: 22px
+			letter-spacing: 0.25px
+			text-align: justify
+			text-align: center
+	&__email
+		input
+			display: block
+			width: 228px
+			margin: 0 auto
+			height: 32px
+			border: none
+			border-bottom: 1px solid #80c5f4
+			color: #fff
+			font-size: 12px
+			text-align: center
+			&:focus
+				border-color: #fff
+			&::-webkit-input-placeholder
+				color: rgba(225,225,225,.5)
+				font-size: 10px
+			&:-moz-placeholder
+				color: rgba(225,225,225,.5)
+				font-size: 10px
+			&::-moz-placeholder
+				color: rgba(225,225,225,.5)
+				font-size: 10px
+			&:-ms-input-placeholder
+				color: rgba(225,225,225,.5)
+				font-size: 10px
+	&__button
+		text-align: center
+		padding-top: 24px
+		padding-bottom: 59px
+		a
+			display: inline-block
+			height: 54px
+			padding: 0 80px
+			line-height: 52px
+			color: #008be9
+			border-radius: 27px
+			text-transform: uppercase
+			font-size: 12px
+			font-family: "GothamProBold", sans-serif
+			background-color: #fff
+			border: 1px solid #fff
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: transparent
