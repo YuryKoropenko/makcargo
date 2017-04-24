@@ -36,4 +36,15 @@ $(document).ready(function() {
 			$(this).parent().children('.calculation__text').hide();
 		}
 	});
+
+	/*вопросы*/
+	$('.questions__item-name').on('click', function() {
+		$(this).children('.plus-wp').children('.plus').toggleClass('minus');
+		$(this).parent().children('.questions__item-block').slideToggle();
+	});
+
+	/*наши услуги*/
+	var ht = $('.our-services__left').height();
+	$('.our-services__right').height(ht + 196);
+
 });

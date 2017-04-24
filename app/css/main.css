@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after {
+.clearfix:after, .our-services__bottom:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before {
+.clearfix:before, .our-services__bottom:before {
   content: '';
   display: table;
 }
@@ -67,6 +67,10 @@ body {
 
 .header__phone {
   padding-top: 15px;
+}
+
+.ser {
+  background-color: #f2f4f5;
 }
 
 .wht {
@@ -1067,4 +1071,461 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: transparent;
+}
+
+.our-services__title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.our-services__title b {
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: inline-block;
+}
+
+.our-services__top {
+  padding: 60px 26px 40px 26px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-services__link {
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 19px;
+  font-family: "GothamProMedium", sans-serif;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 5px 0 5px 40px;
+}
+
+.our-services__link:hover {
+  color: #008be9;
+  text-decoration: underline;
+}
+
+.our-services__left {
+  background-color: #1995e5;
+  width: 332px;
+  padding-top: 98px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-bottom: 98px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.our-services__left-block .our-services__left-item:last-child {
+  padding-bottom: 0;
+}
+
+.our-services__left-item {
+  padding-bottom: 25px;
+  display: block;
+}
+
+.our-services__left-link {
+  color: #fff;
+  font-size: 14px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: inline-block;
+}
+
+.our-services__left-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.our-services__right {
+  float: left;
+  width: 808px;
+  overflow: hidden;
+}
+
+.our-services__right-block {
+  width: 100%;
+}
+
+.our-services__right-block img {
+  width: 100%;
+  display: block;
+}
+
+.our-services__stock {
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.our-services__stock a {
+  display: inline-block;
+  height: 54px;
+  padding: 0 80px;
+  line-height: 52px;
+  color: #fff;
+  border-radius: 27px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "GothamProBold", sans-serif;
+  background-color: #0088ed;
+  border: 1px solid #0088ed;
+}
+
+.our-services__stock a:hover {
+  text-decoration: none;
+  color: #0088ed;
+  background-color: transparent;
+}
+
+.sending__title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.sending__title b {
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: inline-block;
+}
+
+.sending__item {
+  text-align: center;
+}
+
+.sending__numb {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.sending__numb span {
+  color: rgba(0, 139, 233, 0.1);
+  font-size: 100px;
+  letter-spacing: 0.25px;
+  font-family: "GothamProBlack", sans-serif;
+  line-height: 100px;
+}
+
+.sending__zag {
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.sending__zag b {
+  color: #323232;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  font-family: "GothamProBold", sans-serif;
+  text-transform: uppercase;
+}
+
+.sending__description p {
+  color: #323232;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.25px;
+}
+
+.sending__description p a {
+  color: #008be9;
+  text-decoration: underline;
+}
+
+.sending__description p a:hover {
+  text-decoration: none;
+  color: #008be9;
+}
+
+.sending__stock {
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+
+.sending__stock a {
+  display: inline-block;
+  height: 54px;
+  padding: 0 80px;
+  line-height: 52px;
+  color: #fff;
+  border-radius: 27px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "GothamProBold", sans-serif;
+  background-color: #0088ed;
+  border: 1px solid #0088ed;
+}
+
+.sending__stock a:hover {
+  text-decoration: none;
+  color: #0088ed;
+  background-color: transparent;
+}
+
+.traffic__title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.traffic__title b {
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: inline-block;
+}
+
+.traffic__description {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.traffic__description p {
+  display: inline-block;
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "GothamProMedium", sans-serif;
+}
+
+.traffic__item {
+  border: 10px solid #e5e6e7;
+  padding: 8px 5px;
+  height: 240px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.traffic__img {
+  display: block;
+  text-align: center;
+}
+
+.traffic__img img {
+  display: inline-block;
+}
+
+.traffic__zag {
+  text-align: center;
+}
+
+.traffic__zag b {
+  color: #323232;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.25px;
+  font-family: "GothamProBold", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.traffic__op {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.traffic__op p {
+  color: #323232;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.25px;
+}
+
+.traffic__op p span {
+  color: #008be9;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.25px;
+  font-family: "GothamProBold", sans-serif;
+}
+
+.traffic__stock {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.traffic__stock a {
+  display: inline-block;
+  height: 54px;
+  padding: 0 80px;
+  line-height: 52px;
+  color: #fff;
+  border-radius: 27px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "GothamProBold", sans-serif;
+  background-color: #0088ed;
+  border: 1px solid #0088ed;
+}
+
+.traffic__stock a:hover {
+  text-decoration: none;
+  color: #0088ed;
+  background-color: transparent;
+}
+
+.questions__title {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.questions__title b {
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: inline-block;
+}
+
+.questions__item {
+  position: relative;
+  border-bottom: 1px solid #989898;
+}
+
+.questions__item-block {
+  padding-bottom: 24px;
+  display: none;
+}
+
+.questions__item .plus {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+}
+
+.questions__item .plus-wp {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.questions__item .plus::before {
+  content: '';
+  width: 2px;
+  height: 16px;
+  background-color: #0088ed;
+  position: absolute;
+  left: 7px;
+  top: 0;
+}
+
+.questions__item .plus::after {
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #0088ed;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.questions__item .minus::before {
+  content: '';
+  display: none !important;
+}
+
+.questions__item-name {
+  position: relative;
+  padding: 24px 0;
+  cursor: pointer;
+}
+
+.questions__bottom {
+  text-align: center;
+  padding-bottom: 96px;
+}
+
+.questions__bottom p {
+  display: inline-block;
+}
+
+.seo strong {
+  color: #323232;
+  font-size: 12px;
+  line-height: 19px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: block;
+  padding-bottom: 26px;
+}
+
+.seo h2 {
+  color: #323232;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 19px;
+  font-family: "GothamProBold", sans-serif;
+  letter-spacing: 0.25px;
+  display: block;
+  padding-bottom: 16px;
+}
+
+.seo p {
+  color: #323232;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.25px;
+}
+
+.seo__button a {
+  color: #008be9;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 19px;
+  display: inline-block;
+  text-decoration: underline;
+  letter-spacing: 0.25px;
+}
+
+.footer {
+  background-color: #454545;
+}
+
+.f-logo {
+  padding-left: 35px;
+}
+
+.f-logo__link {
+  position: relative;
+  width: 191px;
+  height: 55px;
+  display: block;
+}
+
+.f-logo__link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.f-logo__link span {
+  display: inline-block;
+  position: absolute;
+  right: -2px;
+  bottom: 0;
+  color: #fff;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
 }
