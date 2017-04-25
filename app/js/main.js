@@ -8,6 +8,13 @@ $(document).ready(function() {
 		$(this).children('.sub-nav').stop(true, false).fadeOut();
 	});
 
+	/*mob-nav*/
+	$('.nav__button a').on('click', function() {
+		$(this).toggleClass('close');
+		$('.mob-nav').slideToggle();
+		return false;
+	});
+
 	$('.sub-nav__item').hover(function() {
 		$(this).children('.sub-nav__link').addClass('sub-nav__link-active');
 		$(this).children('.sub-nav').stop(true, false).fadeIn();

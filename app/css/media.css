@@ -1,11 +1,93 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1322px) {
+  .logo, .phone {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav__link {
+    padding: 0 20px;
+  }
+  .nav {
+    display: inline-block;
+  }
+  .header__nav {
+    text-align: center;
+  }
+  /**/
+}
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .our-services__right {
+    width: 608px;
+  }
+  .our-services__right-block {
+    width: auto;
+    height: 100%;
+  }
+  .our-services__right-block img {
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .promotions__right {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 18px !important;
+  }
+  .index-slider__img img {
+    max-height: 100%;
+    max-width: 100%;
+  }
   /**/
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
+  .header {
+    position: relative;
+  }
+  .nav {
+    display: none;
+  }
+  .logo__link span {
+    display: none;
+  }
+  .header__nav {
+    padding-top: 17px;
+  }
+  .mob-nav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 64px;
+    z-index: 999;
+  }
+  .nav__button {
+    text-align: right;
+  }
+  .nav__button a {
+    width: 22px;
+    height: 19px;
+    background-image: url(../img/icon/5.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-block;
+  }
+  .close a {
+    background-position: right center;
+  }
+  .nav__item {
+    width: 100%;
+  }
+  .nav__link {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   /**/
 }
 
@@ -42,6 +124,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  .mob-nav {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
   /**/
 }
 
