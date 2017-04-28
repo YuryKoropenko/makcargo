@@ -1,27 +1,50 @@
 $(document).ready(function() {
-	/*nav*/
-	$('.nav__item').hover(function() {
-		$(this).children('.nav__link').addClass('nav__link-active');
-		$(this).children('.sub-nav').stop(true, false).fadeIn();
-	}, function() {
-		$(this).children('.nav__link').removeClass('nav__link-active');
-		$(this).children('.sub-nav').stop(true, false).fadeOut();
-	});
+	if ($(window).width() > 1000) {
+		/*nav*/
+		$('.nav__item').hover(function() {
+			$(this).children('.nav__link').addClass('nav__link-active');
+			$(this).children('.sub-nav').stop(true, false).fadeIn();
+		}, function() {
+			$(this).children('.nav__link').removeClass('nav__link-active');
+			$(this).children('.sub-nav').stop(true, false).fadeOut();
+		});
+		$('.sub-nav__item').hover(function() {
+			$(this).children('.sub-nav__link').addClass('sub-nav__link-active');
+			$(this).children('.sub-nav').stop(true, false).fadeIn();
+		}, function() {
+			$(this).children('.sub-nav__link').removeClass('sub-nav__link-active');
+			$(this).children('.sub-nav').stop(true, false).fadeOut();
+		});
+	}
+	if ($(window).width() < 1000) {
+		/*nav*/
+		$('.nav__link').on('click',function() {
+			$('.nav__link').css({
+				'text-align': 'left'
+			});
+			$('.phone').css({
+				'text-align': 'left'
+			});
+			$(this).parent().children('.sub-nav').stop(true, false).fadeToggle();
+			return false;
+		});
+		$('.sub-nav__item').on('click' ,function() {
+			$(this).children('.sub-nav__link').toggleClass('sub-nav__link-active');
+			$(this).children('.sub-nav').stop(true, false).fadeToggle();
+			return false;
+		});
 
-	/*mob-nav*/
-	$('.nav__button a').on('click', function() {
-		$(this).toggleClass('close');
-		$('.mob-nav').slideToggle();
-		return false;
-	});
+		/*mob-nav*/
+		$('.nav__button a').on('click', function() {
+			$(this).toggleClass('close');
+			$('.page__bg').fadeToggle();
+			$('.mob-nav__wp').slideToggle();
+			return false;
+		});
+	}
 
-	$('.sub-nav__item').hover(function() {
-		$(this).children('.sub-nav__link').addClass('sub-nav__link-active');
-		$(this).children('.sub-nav').stop(true, false).fadeIn();
-	}, function() {
-		$(this).children('.sub-nav__link').removeClass('sub-nav__link-active');
-		$(this).children('.sub-nav').stop(true, false).fadeOut();
-	});
+
+
 
 	/*index-links*/
 	$('.index-links__link').hover(function() {

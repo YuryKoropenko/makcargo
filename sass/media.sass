@@ -39,20 +39,22 @@
 @media only screen and (max-width : 991px)
 	.header
 		position: relative
+		padding-bottom: 7px
+		z-index: 999
 	.nav
 		display: none
 	.logo__link span
 		display: none
 	.header__nav
 		padding-top: 17px
-	.mob-nav
+	.mob-nav__wp
 		display: none
 		position: absolute
 		background-color: #fff
 		left: 0
 		right: 0
-		top: 64px
-		z-index: 999
+		top: 71px
+		z-index: 990
 	.nav__button
 		text-align: right
 		a
@@ -72,7 +74,171 @@
 		text-align: left
 		padding-left: 20px
 		padding-right: 20px
-
+		text-align: center
+	.page__bg
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(#000,.6)
+		z-index: 999
+		display: none
+	.index-links
+		position: static
+		left: auto
+		top: auto
+		width: 100%
+		padding: 0 20px 24px
+		transform: none
+		-webkit-transform: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	.index-links__item
+		display: block
+		padding: 0
+	.index-links__link
+		width: 60px
+		height: 60px
+		padding-left: 14px
+		padding-top: 14.5px
+		&:hover
+			.index-links__icon
+				background-position-x: right !important
+	.index-links__icon
+		background-image: url(../img/icon/mob-sprite.png)
+		width: 30px
+		height: 29px
+	.phone
+		text-align: left !important
+		padding: 30px 20px
+		text-align: center !important
+	.sub-nav
+		width: 100%
+		position: static
+		left: auto
+		top: auto
+	.sub-nav__link
+		width: 100%
+	.sub-nav__link span
+		left: 35px
+		right: 35px
+	.index-slider
+		height: auto !important
+	.mob-calculation
+		&__button
+			width: 100%
+			padding: 0 8px
+			margin-bottom: 20px
+			a
+				height: 60px
+				background-color: #008be9
+				display: block
+				width: 100%
+				text-align: center
+				line-height: 60px
+				border-radius: 30px
+				color: #fff
+				font-size: 14px
+				&:hover
+					text-decoration: none
+					color: #fff
+	.index-slider .slick-dots
+		display: none !important
+	.index-slider__img
+		text-align: center
+	.index-slider__wrapper
+		display: block
+		padding-top: 25px
+		height: auto
+	.index-slider__description
+		text-align: center
+	.index-slider__title h2
+		font-size: 20px
+		line-height: 30px
+	.index-slider__wrapper p
+		font-size: 14px
+	.index-slider__img
+		height: 252px
+		width: 252px
+		margin: 0 auto
+		text-align: left
+	.index-slider__img img
+		height: 100%
+		max-width: 200% !important
+		display: inline-block
+	.wht-c
+		margin-left: -15px !important
+		margin-right: -15px !important
+		padding-left: 15px
+		padding-right: 15px
+		width: auto
+		margin-top: 0 !important
+		margin-bottom: 0 !important
+	.page__advantages
+		padding-top: 0
+		padding-bottom: 24px
+	.promotions__title b
+		color: #323232
+		font-size: 20px
+		line-height: 30px
+	.row
+		padding-top: 0 !important
+	.promotions__slider .slick-arrow
+		width: 28px
+		height: 28px
+		transform: none
+		-webkit-transform: none
+		top: 0
+	.promotions__slider .slick-prev
+		left: 0
+	.promotions__slider .slick-next
+		right: 0
+	.promotions__slider .slick-prev::after
+		left: 10px
+	.promotions__slider .slick-next::after
+		right: 10px
+	.promotions__item .col-md-12 > div
+		border: none !important
+		background-color: #fff
+	.promotions .column-3 input
+		display: none
+	.promotions__stock
+		display: none
+	.bht
+		background-color: #fff
+	.subscription__title b
+		color: #323232
+		font-size: 20px
+		line-height: 30px
+	.subscription__description p
+		color: #323232
+		font-size: 14px
+		line-height: 22px
+	.mob-subscription
+		margin-left: -15px
+		margin-right: -15px
+		width: auto
+		background-color: #008be9
+		padding-left: 40px
+		padding-right: 40px
+		padding-top: 40px
+	.subscription__button a
+		padding-left: 0
+		padding-right: 0
+		width: 100%
+		text-align: center
+	.subscription__button
+		padding-bottom: 40px
+	.wht
+		margin-top: 0 !important
+	.our-services__title b
+		font-size: 20px
+		line-height: 30px
 	/**/
 
 
@@ -110,7 +276,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	.mob-nav
+	.mob-nav__wp
 		display: none
 	.nav
 		display: block

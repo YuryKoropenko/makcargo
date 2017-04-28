@@ -10,6 +10,16 @@ $(document).ready(function() {
 		arrows: true,
 		slidesToShow: 1,
 		centerMode: true,
-		centerPadding: '150px'
+		centerPadding: '150px',
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 1,
+				centerMode: false,
+				centerPadding: '0px'
+			}
+		}
+		]
 	});
 });
