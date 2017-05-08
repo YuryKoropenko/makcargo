@@ -22,4 +22,12 @@ $(document).ready(function() {
 		}
 		]
 	});
+
+	$('.mob-our-services__top').slick({
+		asNavFor: '.mob-our-services__bottom'
+	});
+	$('.mob-our-services__bottom').slick({
+		asNavFor: '.mob-our-services__top',
+		arrows: false
+	});
 });

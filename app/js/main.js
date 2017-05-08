@@ -73,6 +73,12 @@ $(document).ready(function() {
 		$(this).parent().children('.questions__item-block').slideToggle();
 	});
 
+	$('.seo__button a').on('click', function() {
+		$('.seo .mob-seo-text').addClass('hidden');
+		$('.seo p').show();
+		return false;
+	});
+
 	/*наши услуги*/
 	var ht = $('.our-services__left').height();
 	$('.our-services__right').height(ht + 196);
