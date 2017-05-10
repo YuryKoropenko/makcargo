@@ -1329,3 +1329,456 @@ body
 	&:hover
 		color: #fff
 		text-decoration: underline
+
+.navi
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 36px
+		&:last-child
+			padding-right: 0
+	&__link
+		color: #323232
+		font-size: 12px
+		font-family: "GothamProLight", sans-serif
+		display: block
+	&__last
+		color: #0088ed
+		font-size: 12px
+		font-family: "GothamProLight", sans-serif
+		display: block
+
+.p-title
+	text-align: left
+	display: block
+	padding-top: 14px
+	padding-bottom: 80px
+	b
+		font-size: 40px
+		font-family: "GothamProBlack", sans-serif
+		line-height: 45px
+		letter-spacing: 0.25px
+		text-transform: uppercase
+		color: #323232
+		display: inline-block
+
+.tabs
+	background-color: #f4f5f5
+	padding: 25px 30px
+	border: 1px solid #dcdddd
+	.active
+		color: #0088ed
+	&__item
+		cursor: pointer
+		display: inline-block
+		margin-bottom: 16px
+		color: #323232
+		font-size: 14px
+		&:hover
+			color: #0088ed
+		&:last-child
+			margin-bottom: 0
+
+.content
+	padding-bottom: 130px
+	h2
+		color: #323232
+		font-family: "GothamProBold", sans-serif
+		text-transform: uppercase
+		font-size: 16px
+		line-height: 21px
+	p
+		line-height: 21px
+		color: #323232
+		font-size: 14px
+
+.i-stas
+	padding-top: 40px
+	&__item
+		padding-left: 66px
+		position: relative
+		margin-bottom: 30px
+	&__img
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		img
+			display: block
+	&__right
+	&__title
+		color: #323232
+		text-transform: uppercase
+		font-size: 12px
+		line-height: 18px
+		display: block
+		font-family: "GothamProBold", sans-serif
+	&__description
+		color: #323232 !important
+		font-size: 12px !important
+		line-height: 18px !important
+		display: block
+
+.mob-tabs
+	background-color: #f4f5f5
+	padding: 0 20px
+	border: 1px solid #dcdddd
+	margin-bottom: 40px
+	&__item
+		color: #323232
+		font-size: 14px
+		padding: 8px 15px 8px 0
+		position: relative
+		cursor: pointer
+		&-active
+			&::after
+				content: ''
+				border: none !important
+				border: 6px solid transparent !important
+				border-bottom: 8px solid #454545 !important
+				margin-top: -10px !important
+		&::after
+			content: ''
+			border: 6px solid transparent
+			border-top: 8px solid #454545
+			display: block
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -4px
+
+.staff
+	border: 1px solid #f4f5f5
+	padding: 50px 35px 10px 35px
+	margin-bottom: 86px
+	&__item
+		position: relative
+		padding-left: 166px
+		height: 195px
+		margin-bottom: 40px
+	&__img
+		width: 140px
+		height: 195px
+		overflow: hidden
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-content: space-between
+		align-items: center
+		flex-direction: column
+		position: absolute
+		left: 0
+		top: 0
+		img
+			display: block
+			min-width: 100%
+			min-height: 100%
+	&__right
+	&__name
+		font-size: 14px
+		line-height: 21px
+		color: #454545
+		font-family: "GothamProMedium", sans-serif
+		display: block
+		padding-bottom: 10px
+	&__description
+		font-size: 14px
+		line-height: 21px
+		color: #454545
+	&__link
+		color: #008be9
+		font-size: 14px
+		line-height: 21px
+		&:hover
+			color: #008be9
+			text-decoration: underline
+
+.license
+	&__item
+		padding-left: 168px
+		position: relative
+		min-height: 200px
+		margin-bottom: 40px
+	&__img
+		width: 142px
+		height: 200px
+		position: absolute
+		left: 0
+		top: 0
+		overflow: hidden
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-content: space-between
+		align-items: center
+		flex-direction: column
+		cursor: pointer
+		img
+			display: block
+			min-width: 100%
+			min-height: 100%
+		&-hover
+			position: absolute
+			width: 142px
+			height: 200px
+			left: 0
+			top: 0
+			background-color: rgba(#000,.7)
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-content: space-between
+			align-items: center
+			flex-direction: column
+			opacity: 0
+			&-wp
+				i
+					width: 20px
+					height: 20px
+					display: block
+					margin: 0 auto
+					margin-bottom: 12px
+				span
+					color: #fff
+					font-size: 12px
+					line-height: 21px
+	&__title
+		color: #454545
+		font-family: "GothamProMedium", sans-serif
+		font-size: 14px
+		line-height: 21px
+		display: block
+		padding-bottom: 10px
+	&__description
+		font-size: 14px
+		color: #454545
+		line-height: 21px
+
+.reviews
+	padding-bottom: 20px
+	&__item
+		margin-bottom: 30px
+	&__data
+		text-align: center
+		padding-bottom: 6px
+		span
+			display: inline-block
+			color: #454545
+			font-size: 14px
+			line-height: 21px
+			font-family: "GothamProMedium", sans-serif
+	&__img
+		width: 142px
+		height: 200px
+		margin: 0 auto
+		overflow: hidden
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-content: space-between
+		align-items: center
+		flex-direction: column
+		cursor: pointer
+		position: relative
+		img
+			display: block
+			min-width: 100%
+			min-height: 100%
+
+.popup-bg
+	position: fixed
+	z-index: 990
+	left: 0
+	top: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(#000,.6)
+	display: none
+.feedback-popup
+	position: fixed
+	width: 792px
+	background-color: #fff
+	z-index: 999
+	margin: 0 auto
+	left: 0
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%)
+	padding: 50px 60px
+	display: none
+	&__wrapper
+		position: relative
+	&__title
+		text-align: center
+		padding-bottom: 40px
+		b
+			color: #323232
+			font-size: 25px
+			letter-spacing: 0.25px
+			line-height: 45px
+			display: inline-block
+	&__input
+		input
+			display: block
+			width: 100%
+			height: 44px
+			border: 1px solid #d8d9d9
+			border-radius: 22px
+			padding: 0 16px
+			color: #323232
+			font-size: 12px
+			letter-spacing: 0.25px
+			&:focus
+				border-color: #0088ed
+	&__button
+		padding-top: 30px
+		text-align: center
+		button
+			height: 54px
+			padding: 0 40px
+			display: inline-block
+			line-height: 52px
+			border: 1px solid #0088ed
+			background-color: #0088ed
+			text-align: center
+			color: #fff
+			font-size: 14px
+			letter-spacing: 0.25px
+			border-radius: 27px
+			&:hover
+				background-color: transparent
+				color: #0088ed
+	&__close
+		position: absolute
+		display: block
+		width: 13px
+		height: 13px
+		background-image: url(../img/icon/close.png)
+		background-repeat: no-repeat
+		background-position: center center
+		right: -30px
+		top: -20px
+		cursor: pointer
+
+.calculation-popup
+	position: fixed
+	width: 792px
+	background-color: #fff
+	z-index: 999
+	margin: 0 auto
+	left: 0
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%)
+	padding: 50px 60px
+	display: none
+	&__wrapper
+		position: relative
+	&__close
+	&__title
+		text-align: center
+		b
+			color: #323232
+			font-size: 25px
+			letter-spacing: 0.25px
+			line-height: 45px
+			display: inline-block
+	&__person
+		display: block
+		font-size: 0
+		text-align: center
+		padding-bottom: 18px
+		&-item
+			display: inline-block
+			margin: 0 13px
+			input
+				display: none
+			label
+				font-size: 16px
+				line-height: 45px
+				color: #323232
+				letter-spacing: 0.25px
+				cursor: pointer
+input[name="c-person"]:checked + label
+	color: #0d7ad6
+
+.sequence
+	&__item
+		position: relative
+		padding-left: 40px
+		margin-bottom: 58px
+	&__numb
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		span
+			color: #0088ed
+			font-size: 25px
+			letter-spacing: 0.25px
+	&__text
+		p
+			color: #323232
+			font-size: 13px
+			line-height: 19px
+			letter-spacing: 0.25px
+.transport
+	span
+		font-size: 14px
+		color: #323232
+		line-height: 40px
+		letter-spacing: 0.25px
+		display: inline-block
+	&__block
+		display: inline-block
+		padding-left: 10px
+		font-size: 0
+		&-item
+			display: inline-block
+			padding: 0 10px
+			input
+				display: none
+			label
+				color: #323232
+				font-size: 14px
+				line-height: 40px
+				cursor: pointer
+input[name="s-transport"]:checked + label
+	color: #0d7ad6

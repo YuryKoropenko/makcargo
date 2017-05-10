@@ -1,3 +1,6 @@
+$(window).resize(function(){
+	window.setTimeout('location.reload()', 500);
+});
 $(document).ready(function() {
 	if ($(window).width() > 1000) {
 		/*nav*/
@@ -79,8 +82,60 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.mob-tabs__item').on('click', function() {
+		$(this).toggleClass('mob-tabs__item-active');
+		$('.content').toggle();
+	});
+
+	$('.mob-content-button a').on('click', function() {
+		$('.mob-content-text').hide();
+		$('.content__wp').show();
+		return false;
+	});
+
+	$('.license__img').hover(function() {
+		$(this).children('.license__img-hover').css('opacity', '1');
+	}, function() {
+		$(this).children('.license__img-hover').css('opacity', '0');
+	});
+
+	$('.reviews__img').hover(function() {
+		$(this).children('.license__img-hover').css('opacity', '1');
+	}, function() {
+		$(this).children('.license__img-hover').css('opacity', '0');
+	});
+
+	$('.phone__feedback').on('click', function() {
+		$('.popup-bg').fadeIn();
+		$('.feedback-popup').fadeIn();
+		return false;
+	});
+	$('.index-links__link-calculation').on('click', function() {
+		$('.popup-bg').fadeIn();
+		$('.calculation-popup').fadeIn();
+		return false;
+	});
+	$('.calculation__button').on('click', function() {
+		$('.popup-bg').fadeIn();
+		$('.calculation-popup').fadeIn();
+		return false;
+	});
+
+	$('.popup-bg').on('click', function() {
+		$(this).fadeOut();
+		$('.feedback-popup').fadeOut();
+		$('.calculation-popup').fadeOut();
+	});
+
+	$('.feedback-popup__close').on('click', function() {
+		$('.popup-bg').fadeOut();
+		$('.feedback-popup').fadeOut();
+		$('.calculation-popup').fadeOut();
+	});
+
 	/*наши услуги*/
 	var ht = $('.our-services__left').height();
 	$('.our-services__right').height(ht + 196);
 
+	$('.phone-input').mask("(999) 999-9999");
 });

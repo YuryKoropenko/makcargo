@@ -211,7 +211,7 @@
 			</div>
 			<ul class="index-links">
 				<li class="index-links__item">
-					<a href="#" class="index-links__link">
+					<a href="#" class="index-links__link index-links__link-calculation">
 						<i class="index-links__icon" style="background-position: 0 0;"></i>
 					</a>
 				</li>
@@ -1627,21 +1627,92 @@
 			</div>
 		</div>
 	</footer>
-	<!--
+	<div class="popup-bg"></div>
 	<div class="feedback-popup">
 		<div class="feedback-popup__wrapper">
+			<i class="feedback-popup__close"></i>
 			<div class="feedback-popup__title">
 				<b>
-					Куда отправить рас
+					Обратный звонок
 				</b>
 			</div>
+			<form action="">
+				<div class="feedback-popup__inputs">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="feedback-popup__input">
+								<input type="text" placeholder="Ваше имя и фамиля">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feedback-popup__input">
+								<input class="phone-input" type="text" placeholder="Ваш номер телефона">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedback-popup__button">
+					<button type="submit">Отправить</button>
+				</div>
+			</form>
 		</div>
 	</div>
-	-->
+	<div class="calculation-popup">
+		<div class="calculation-popup__wrapper">
+			<i class="feedback-popup__close calculation-popup__close"></i>
+			<div class="calculation-popup__title">
+				<b>
+					Куда отправить расчет
+				</b>
+			</div>
+			<ul class="calculation-popup__person">
+				<li class="calculation-popup__person-item">
+					<input type="radio" checked name="c-person" id="c-person-1">
+					<label for="c-person-1">Юридическое лицо</label>
+				</li>
+				<li class="calculation-popup__person-item">
+					<input type="radio" name="c-person" id="c-person-2">
+					<label for="c-person-2">Физичиское лицо</label>
+				</li>
+			</ul>
+			<form action="">
+				<div class="feedback-popup__inputs">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="feedback-popup__input">
+								<input type="text" placeholder="Название компании">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feedback-popup__input">
+								<input type="text" placeholder="Ваше имя и фамиля">
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 30px;">
+						<div class="col-md-6">
+							<div class="feedback-popup__input">
+								<input class="phone-input" type="text" placeholder="Ваш номер телефона">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="feedback-popup__input">
+								<input type="text" placeholder="Ваш e-mail">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedback-popup__button">
+					<button type="submit">Получить расчет</button>
+				</div>
+			</form>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/sliders.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>
