@@ -15,7 +15,6 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -242,13 +241,8 @@
 									</a>
 								</li>
 								<li class="navi__item">
-									<a href="#" class="navi__link">
-										Грузоперевозки
-									</a>
-								</li>
-								<li class="navi__item">
 									<span class="navi__last">
-										Авиаперевозки
+										Контакты
 									</span>
 								</li>
 							</ul>
@@ -256,348 +250,272 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="page__p-title">
 							<div class="p-title">
 								<b>
-									Заявка на расчет грузоперевозки
+									Контакты
 								</b>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="page__tabs hidden-sm hidden-xs">
-							<ul class="tabs">
-								<li class="tabs__item active">
-									Рассчет перевозки
-								</li><br>
-								<li class="tabs__item">
-									Оформить заявку
-								</li><br>
-								<li class="tabs__item">
-									Оплата заказа
-								</li><br>
-								<li class="tabs__item">
-									Статус заказа
-								</li><br>
-								<li class="tabs__item">
-									Вопрос-ответ
-								</li><br>
-								<li class="tabs__item">
-									Документы и реквизиты
-								</li><br>
-								<li class="tabs__item">
-									Новости
-								</li><br>
-								<li class="tabs__item">
-									Акции
-								</li>
-							</ul>
-						</div>
-						<div class="page__mob-tabs hidden-md hidden-lg">
-							<ul class="mob-tabs">
-								<li class="mob-tabs__item">
-									Рассчет перевозки
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<div class="page__content">
-							<div class="content staff license sequence">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="sequence__item">
-											<div class="sequence__numb">
-												<span>01</span>
-											</div>
-											<div class="sequence__text">
-												<p>
-													Заполните характеристики перевозимого  груза
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="sequence__item">
-											<div class="sequence__numb">
-												<span>02</span>
-											</div>
-											<div class="sequence__text">
-												<p>
-													Получите Расчет<br>на почту или по телефону
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="sequence__item">
-											<div class="sequence__numb">
-												<span>03</span>
-											</div>
-											<div class="sequence__text">
-												<p>
-													Станьте постоянным<br>клиентом
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="transport">
-											<span>Выберите транспорт:</span>
-											<ul class="transport__block">
-												<li class="transport__block-item">
-													<input type="radio" checked name="s-transport" id="s-transport-1">
-													<label for="s-transport-1">Авиа</label>
-												</li>
-												<li class="transport__block-item">
-													<input type="radio" name="s-transport" id="s-transport-2">
-													<label for="s-transport-2">Авто</label>
-												</li>
-												<li class="transport__block-item">
-													<input type="radio" name="s-transport" id="s-transport-3">
-													<label for="s-transport-3">Ж/Д</label>
-												</li>
-												<li class="transport__block-item">
-													<input type="radio" name="s-transport" id="s-transport-4">
-													<label for="s-transport-4">Морские</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-5">
-										<div class="t-addr">
-											<label for="">
-												Адрес отправителя
-											</label>
-											<div class="t-addr__item">
-												<input type="text" placeholder="Откуда">
-											</div>
-											<div class="t-addr__bottom">
-												<input type="text" placeholder="Укажите улицу, дом, квартиру (офис)">
-											</div>
-										</div>
-									</div>
-									<div class="col-md-5 col-md-offset-2">
-										<div class="t-addr">
-											<label for="">
-												Адрес получателя
-											</label>
-											<div class="t-addr__item">
-												<input type="text" placeholder="Куда">
-											</div>
-											<div class="t-addr__bottom">
-												<input type="text" placeholder="Укажите улицу, дом, квартиру (офис)">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info">
-											<div class="t-info__item">
-												<input type="text" placeholder="Мест">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Вес (кг)">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Стоимость">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Дата">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 20px;">
-											<div class="t-info__item">
-												<input type="text" placeholder="Длина (м)">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Ширина (м)">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Высота (м)">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Обьем (м)">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="t-character">
-											<label>
-												Характер груза:
-											</label>
-											<select name="t-character" id="t-character">
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option selected="selected">Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="t-character">
-											<label>
-												Упаковать груз:
-											</label>
-											<select name="t-character-1" id="t-character-1">
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option selected="selected">Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-amenities">
-											<div class="t-amenities__title">
-												<b>
-													Предоставляем услуги
-												</b>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4">
-										<div class="t-amenities">
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-1" id="t-amenities-1">
-												<label for="t-amenities-1">
-													Экспресс-доставка
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-1" id="t-amenities-2">
-												<label for="t-amenities-2">
-													Экспресс-доставка
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-1" id="t-amenities-3">
-												<label for="t-amenities-3">
-													Экспресс-доставка
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="t-amenities">
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-2" id="t-amenities-4">
-												<label for="t-amenities-4">
-													Маркировка груза
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-2" id="t-amenities-5">
-												<label for="t-amenities-5">
-													Маркировка груза
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-2" id="t-amenities-6">
-												<label for="t-amenities-6">
-													Маркировка груза
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="t-amenities">
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-3" id="t-amenities-7">
-												<label for="t-amenities-7">
-													Отправка сопроводительных документов
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-3" id="t-amenities-8">
-												<label for="t-amenities-8">
-													Отправка сопроводительных документов
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="feedback-popup__button">
-											<button type="submit">Получить расчет</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="ser">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="seo" style="padding-top: 48px; padding-bottom: 22px;">
-							<strong>
-								Вашей компании требуются выгодные грузоперевозки и партнеры, предлагающие действительно хорошие условия? Тогда сотрудничество с нами станет для вас наилучшим вариантом, ведь мы доставим ваш груз в самые оптимальные сроки, а финансовая сторона вопроса вызовет у вас приятное удивление.
-							</strong>
-							<h2>
-								Самые качественные и надежные грузоперевозки
-							</h2>
-							<p class="mob-seo-text">
-								Компания «Мак Карго» специализируется на транспортировке самых различных грузов практически из любого уголка мира. Если вам необходимо доставить что-либо – вне зависимости от веса, габаритов, степени опасности
-							</p>
-							<p>
-								Компания «Мак Карго» специализируется на транспортировке самых различных грузов практически из любого уголка мира. Если вам необходимо доставить что-либо – вне зависимости от веса, габаритов, степени опасности содержимого – мы сделаем это не только оперативно, но и предельно качественно.<br>Коммерческие грузоперевозки осуществляются нами не первый год, а средний опыт наших сотрудников составляет около 15 лет. Это позволяет нам гарантировать надежность и самое высокое качество нашей работы.<br>Если вам необходима транспортировка какого-либо товара в самые сжатые сроки – мы подберем наиболее оптимальные и оперативные варианты перевозки авиационным транспортом.Не хотите тратить лишних средств? Тогда мы предложим воспользоваться морским вариантом перевозок, что позволит оптимизировать финансовые вопросы.<br>Желаете сочетать скорость и относительную дешевизну, или же нуждаетесь в транспортировке груза на небольшие расстояния? Тогда автомобильный транспорт станет наиболее подходящим решением.<br>На первом месте для вас безопасность, а также финансовая сторона вопроса? Вам идеально подойдет железнодорожный вариант перевозок.<br>Наши логисты также смогут проложить маршрут, который сочетает в себе оперативность и не самые большие расходы – зачастую для этого применяется несколько видов транспорта: подобные перевозки также будут осуществлены нами на самом высоком уровне.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="seo" style="padding-bottom: 60px;">
-							<div class="seo__button">
+					<div class="col-md-6 hidden-sm hidden-xs">
+						<div class="page__p-button">
+							<div class="p-button">
 								<a href="#">
-									Читать весь текст
+									Написать нам
 								</a>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-info">
+							<div class="p-info">
+								<p>
+									С нами можно связаться по любому удобному для вас каналу связи, наши сотрудники помогут решить вопросы по грузоперевозкам. Центральный офис находится в Санкт-Петербурге, также у нас есть представительства по всей России. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hidden-md hidden-lg">
+					<div class="col-md-12">
+						<div class="page__p-button">
+							<div class="p-button">
+								<a href="#">
+									Написать нам
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="page__contacts">
+							<div class="contacts contacts__left">
+								<div class="contacts__item">
+									<b>
+										Санкт-Петербург
+									</b>
+									<p>
+										194291, ул. Курчатова 9,<br>территория завода "Магнитон"
+									</p>
+									<p>
+										Пулковское шоссе, 37к4,<br>Грузовой Терминал Пулково
+									</p>
+									<a href="#" class="show-map">
+										Посмотреть на карте
+									</a>
+								</div>
+								<div class="contacts__item">
+									<b>
+										Ростов
+									</b>
+									<p>
+										344002, ул. Береговая, 8
+									</p>
+								</div>
+								<div class="contacts__item">
+									<b>
+										Екатеринбург
+									</b>
+									<a href="#">
+										620142, г. Екатеринбург, ул. Большакова, 70
+									</a>
+									<a href="#" class="show-map">
+										Посмотреть на карте
+									</a>
+								</div>
+								<div class="contacts__item">
+									<b>
+										Челябинск
+									</b>
+									<p>
+										454091, г. Челябинск, просп. Ленина, 55а
+									</p>
+									<a href="#" class="show-map">
+										Посмотреть на карте
+									</a>
+								</div>
+								<div class="contacts__item">
+									<b>
+										Санкт-Петербург
+									</b>
+									<p>
+										194291, ул. Курчатова 9,<br>территория завода "Магнитон"
+									</p>
+									<p>
+										Пулковское шоссе, 37к4,<br>Грузовой Терминал Пулково
+									</p>
+									<a href="#" class="show-map">
+										Посмотреть на карте
+									</a>
+								</div>
+								<div class="contacts__item">
+									<b>
+										Санкт-Петербург
+									</b>
+									<p>
+										194291, ул. Курчатова 9,<br>территория завода "Магнитон"
+									</p>
+									<p>
+										Пулковское шоссе, 37к4,<br>Грузовой Терминал Пулково
+									</p>
+									<a href="#" class="show-map">
+										Посмотреть на карте
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 hidden-sm hidden-xs"
+						<div class="page__contacts">
+							<div class="contacts contacts__right">
+								<iframe src="https://api-maps.yandex.ua/frame/v1/-/C6q24Jyo" width="560" height="400" frameborder="0"></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					<div class="col-md-3">
+						<div class="page__additional">
+							<div class="additional">
+								<div class="additional__title">
+									Мобильные
+								</div>
+								<div class="additional__item">
+									<a href="tel:89919226028">
+										8 (911) 922 60 28
+									</a>
+									<b>
+										Расчет стоимости перевозки
+									</b>
+								</div>
+								<div class="additional__item">
+									<a href="#">
+										8 (911) 922 60 28
+									</a>
+									<b>
+										Расчет стоимости перевозки
+									</b>
+								</div>
+								<div class="additional__item">
+									<a href="#">
+										8 (911) 922 60 28
+									</a>
+									<b>
+										Расчет стоимости перевозки
+									</b>
+								</div>
+								<div class="additional__item">
+									<div class="additional__description">
+										Также, вы можете обращться<br>к нам через мессенджеры
+									</div>
+									<ul class="additional__soc">
+										<li class="additional__soc-item">
+											<a href="#" class="additional__soc-link" style="background-image: url(img/icon/soc/3.png);"></a>
+										</li>
+										<li class="additional__soc-item">
+											<a href="#" class="additional__soc-link" style="background-image: url(img/icon/soc/2.png);"></a>
+										</li>
+										<li class="additional__soc-item">
+											<a href="#" class="additional__soc-link" style="background-image: url(img/icon/soc/1.png);"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__additional">
+							<div class="additional">
+								<div class="additional__title">
+									Наши телефоны
+								</div>
+								<div class="additional__item">
+									<a href="tel:88002500320">
+										8 (800) 250 03 20
+									</a>
+									<b>
+										Бесплатный звонок по России
+									</b>
+								</div>
+								<div class="additional__item">
+									<a href="#">
+										8 (812) 922 74 50
+									</a>
+									<b>
+										Расчет стоимости перевозки
+									</b>
+								</div>
+								<div class="additional__item">
+									<a href="#">
+										8 (812) 922 60 28
+									</a>
+									<b>
+										Служба поддержки клиентов
+									</b>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__additional">
+							<div class="additional">
+								<div class="additional__title">
+									Skype
+								</div>
+								<div class="additional__item">
+									<p>
+										Руководитель Анастасия
+									</p>
+									<a href="#" class="skype">
+										makcargo1
+									</a>
+								</div>
+								<div class="additional__item">
+									<p>
+										Менеджер Татьяна
+									</p>
+									<a href="#" class="skype">
+										live:519989f5b4073eba
+									</a>
+								</div>
+								<div class="additional__item">
+									<p>
+										Менеджер Алена
+									</p>
+									<a href="#" class="skype">
+										makcargo.log
+									</a>
+								</div>
+								<div class="additional__item">
+									<p>
+										Бухгалтерия Мария
+									</p>
+									<a href="#" class="skype">
+										makcargo_buh
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__additional">
+							<div class="additional">
+								<div class="additional__title">
+									E-mail
+								</div>
+								<div class="additional__item">
+									<a href="#" class="email">
+										info@makcargo.ru
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -927,12 +845,11 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/lightTabs/lightTabs.js"></script>
-	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/scroll/jquery.nicescroll.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$( function() {
-			$('#t-character').selectmenu();
-			$('#t-character-1').selectmenu();
+			$('.contacts__left').niceScroll();
 		});
 	</script>
 	<!-- End_Scripts -->
