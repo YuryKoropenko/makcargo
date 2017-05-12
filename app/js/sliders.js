@@ -23,6 +23,20 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.airlines__slider').slick({
+		arrows: false,
+		slidesToShow: 7,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1,
+				arrows: true
+			}
+		}
+		]
+	});
+
 	$('.mob-our-services__top').slick({
 		asNavFor: '.mob-our-services__bottom'
 	});

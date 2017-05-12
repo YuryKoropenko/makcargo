@@ -602,6 +602,108 @@
     padding-top: 20px;
     padding-bottom: 0;
   }
+  body .wht {
+    min-height: auto !important;
+    padding-top: 0 !important;
+  }
+  .page__toft {
+    height: auto;
+  }
+  .feedback-popup__button-wth {
+    padding: 40px 0;
+  }
+  .feedback-popup__button-wth button {
+    background-color: #fff;
+    border-color: #fff;
+    color: #008be9;
+  }
+  .feedback-popup__button-wth button:hover {
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+  .toft {
+    width: 100%;
+  }
+  .toft__title {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .toft__title h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .optionally__title {
+    padding-top: 48px;
+  }
+  .optionally__title b {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .optionally__img {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .optionally__item {
+    margin: 20px 0;
+  }
+  .airlines__slider {
+    position: relative;
+  }
+  .airlines__slider .slick-arrow {
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    z-index: 10;
+    text-indent: -9999px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .airlines__slider .slick-arrow:hover {
+    border-color: #008be9;
+  }
+  .airlines__slider .slick-arrow:hover::after {
+    background-position-x: right !important;
+  }
+  .airlines__slider .slick-arrow::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(../img/icon/arrows.png);
+    top: 50%;
+    margin-top: -5px;
+    z-index: 11;
+  }
+  .airlines__slider .slick-prev {
+    left: 15px;
+  }
+  .airlines__slider .slick-prev::after {
+    content: '';
+    background-position: left top;
+    left: 10px;
+  }
+  .airlines__slider .slick-next {
+    right: 15px;
+  }
+  .airlines__slider .slick-next::after {
+    content: '';
+    background-position: left bottom;
+    right: 10px;
+  }
+  .airlines__title {
+    padding-bottom: 70px;
+  }
+  .airlines__slider-wrapper {
+    padding-bottom: 60px;
+  }
   /**/
 }
 
