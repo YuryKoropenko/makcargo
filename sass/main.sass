@@ -1838,6 +1838,7 @@ input[name="s-transport"]:checked + label
 			position: absolute
 	&__bottom
 		padding-top: 16px
+		position: relative
 		input
 			border-radius: none
 			border: none
@@ -1846,9 +1847,23 @@ input[name="s-transport"]:checked + label
 			width: 100%
 			font-size: 12px
 			height: 30px
-			padding: 0 8px
+			padding-left: 30px
+			padding-right: 8px
 			&:focus
 				border-color: #0088ed
+		&::before
+			content: ''
+			display: block
+			width: 18px
+			height: 18px
+			background-color: #0088ed
+			border-radius: 2px
+			background-image: url("../img/icon/ceck.png")
+			background-repeat: no-repeat
+			background-position: center center
+			position: absolute
+			left: 0
+			bottom: 6px
 	label
 		margin-bottom: 25px
 		display: inline-block
@@ -1865,41 +1880,78 @@ input[name="s-transport"]:checked + label
 	justify-content: space-between
 	padding-top: 48px
 	&__item
+		.ui-selectmenu-button.ui-button
+			width: 200px
+			border: 1px solid #d8d9d9
+			background-color: transparent
+			border-radius: 22px !important
+			height: 44px
+			padding: 12px 10px
+			letter-spacing: 0.25px
+			display: block
+			.ui-selectmenu-text
+				font-size: 12px
+				color: #878787
+		&-st
+			input
+				width: 98px !important
 		input
 			display: block
 			height: 44px
 			border-radius: 22px
 			border: 1px solid #d8d9d9
-			padding: 0 16px
+			padding: 0 10px
 			font-size: 12px
 			color: #323232
 			text-align: center
 			width: 100%
+		&-big
+			width: 200px
+		&-big-1
+			input
+				width: 200px
+		&-bg
+			width: 336px
+		&-plus
+			margin-left: 10px
+			width: 89px
+			button
+				display: block
+				height: 44px
+				border-radius: 22px
+				border: 1px solid #d8d9d9
+				padding: 0 10px
+				font-size: 12px
+				color: #323232
+				text-align: center
+				width: 100%
+				background-color: transparent
+				font-size: 20px
+				color: #0088ed
 	&__line
 		height: 1px
 		background-color: #ebecec
 		box-sizing: border-box
 		display: block
-		width: 60px
-		margin: 0 30px
+		width: 40px
+		margin: 0 10px
 		position: relative
 		top: 50%
 		margin-top: -0.5px
 
-.ui-selectmenu-button.ui-button
-	width: auto
-	border: none
-	border-bottom: 1px solid #0088ed
-	background-color: transparent
-	border-radius: 0 !important
-	padding: 0 6px
-	color: #323232
-	font-size: 12px
-	letter-spacing: 0.25px
-	display: inline-block
-
 .t-character
 	margin-top: 38px
+	.ui-selectmenu-button.ui-button
+		width: auto
+		border: none
+		border-bottom: 1px solid #0088ed
+		background-color: transparent
+		border-radius: 0 !important
+		padding: 0 6px
+		color: #323232
+		font-size: 12px
+		letter-spacing: 0.25px
+		display: inline-block
 	label
 		color: #323232
 		font-size: 14px
@@ -2253,3 +2305,54 @@ input[name="t-amenities-3"]:checked + label::before
 				display: block
 				max-width: 80%
 				max-height: 100%
+
+.your-data
+	padding-top: 20px
+	p
+		color: #323232
+		font-family: "GothamProMedium", sans-serif
+		font-size: 16px
+		line-height: 40px
+	input
+		-moz-border-bottom-colors: none
+		-moz-border-left-colors: none
+		-moz-border-right-colors: none
+		-moz-border-top-colors: none
+		border-color: currentcolor currentcolor #d8d9d9
+		border-image: none
+		border-style: none none solid
+		border-width: medium medium 1px
+		display: block
+		font-size: 12px
+		height: 40px
+		padding: 0
+		width: 300px
+		float: left
+		&:focus
+			border-color: #0088ed
+	button
+		height: 40px
+		border-radius: 20px
+		background-color: #0088ed
+		border: 1px solid #0088ed
+		line-height: 28px
+		color: #fff
+		font-size: 14px
+		padding: 0 30px
+		display: block
+		float: right
+
+.dop-info
+	textarea
+		display: block
+		width: 100%
+		height: 30px
+		line-height: 26px
+		border-top: 2px solid transparent
+		border-bottom: 2px solid #d8d9d9
+		border-left: none
+		border-right: none
+		font-size: 14px
+		resize: none
+		&:focus
+			border-bottom-color: #0088ed

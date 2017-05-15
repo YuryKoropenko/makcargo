@@ -401,26 +401,29 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="t-info">
-											<div class="t-info__item">
+											<div class="t-info__item t-info__item-st">
 												<input type="text" placeholder="Мест">
 											</div>
 											<div class="t-info__item hidden-sm hidden-xs">
 												<div class="t-info__line"></div>
 											</div>
-											<div class="t-info__item">
+											<div class="t-info__item t-info__item-st">
 												<input type="text" placeholder="Вес (кг)">
 											</div>
 											<div class="t-info__item hidden-sm hidden-xs">
 												<div class="t-info__line"></div>
 											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Стоимость">
+											<div class="t-info__item t-info__item-big-1">
+												<input type="text" placeholder="Д(м) / Ш(м) / В(м)">
 											</div>
 											<div class="t-info__item hidden-sm hidden-xs">
 												<div class="t-info__line"></div>
 											</div>
 											<div class="t-info__item">
-												<input type="text" placeholder="Дата">
+												<input type="text" placeholder="Обьем (м3)">
+											</div>
+											<div class="t-info__item t-info__item-plus">
+												<button>+</button>
 											</div>
 										</div>
 									</div>
@@ -429,25 +432,37 @@
 									<div class="col-md-12">
 										<div class="t-info" style="padding-top: 20px;">
 											<div class="t-info__item">
-												<input type="text" placeholder="Длина (м)">
+												<input type="text" placeholder="Дата отпраки">
 											</div>
 											<div class="t-info__item hidden-sm hidden-xs">
 												<div class="t-info__line"></div>
 											</div>
 											<div class="t-info__item">
-												<input type="text" placeholder="Ширина (м)">
+												<input type="text" placeholder="Обьявленная стоимость">
 											</div>
 											<div class="t-info__item hidden-sm hidden-xs">
 												<div class="t-info__line"></div>
 											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Высота (м)">
+											<div class="t-info__item t-info__item-big">
+												<select name="b-character-1" id="b-character-1">
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option selected="selected">Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+												</select>
 											</div>
 											<div class="t-info__item hidden-sm hidden-xs">
 												<div class="t-info__line"></div>
 											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Обьем (м)">
+											<div class="t-info__item t-info__item-big">
+												<select name="b-character-2" id="b-character-2">
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option selected="selected">Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+												</select>
 											</div>
 										</div>
 									</div>
@@ -552,6 +567,62 @@
 													Отправка сопроводительных документов
 												</label>
 											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="your-data">
+											<p>
+												Заказчик (ваши данные)
+											</p>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<div class="your-data">
+											<input type="text" placeholder="Если отправляли груз: Ваш id или телефон">
+											<button>
+												Войти
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-info" style="padding-top: 40px;">
+											<div class="t-info__item t-info__item-bg">
+												<input type="text" placeholder="Контактное лицо (ФИО) *">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Телефон *">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Email *">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-amenities">
+											<div class="t-amenities__title">
+												<b>
+													Дополнительная информация:
+												</b>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="dop-info">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
 										</div>
 									</div>
 								</div>
@@ -933,6 +1004,8 @@
 		$( function() {
 			$('#t-character').selectmenu();
 			$('#t-character-1').selectmenu();
+			$('#b-character-1').selectmenu();
+			$('#b-character-2').selectmenu();
 		});
 	</script>
 	<!-- End_Scripts -->

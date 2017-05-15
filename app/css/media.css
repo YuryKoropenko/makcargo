@@ -52,6 +52,15 @@
   .nav__link {
     padding: 0 10px;
   }
+  .t-info__item .ui-selectmenu-button.ui-button {
+    width: 100%;
+  }
+  .t-info__item-st input {
+    width: 66px !important;
+  }
+  .t-info__item-big-1 input {
+    width: 157px;
+  }
   /**/
 }
 
@@ -703,6 +712,16 @@
   }
   .airlines__slider-wrapper {
     padding-bottom: 60px;
+  }
+  .t-info__item-st input {
+    width: 100% !important;
+  }
+  .t-info__item-big-1 input {
+    width: 100%;
+  }
+  .t-info__item-plus {
+    width: 100%;
+    margin-left: 0;
   }
   /**/
 }
