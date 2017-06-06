@@ -2377,7 +2377,7 @@ input[name="c-person"]:checked + label {
 .sequence__item {
   position: relative;
   padding-left: 40px;
-  margin-bottom: 58px;
+  margin-bottom: 30px;
 }
 
 .sequence__numb {
@@ -2409,6 +2409,10 @@ input[name="c-person"]:checked + label {
   letter-spacing: 0.25px;
 }
 
+.transport {
+  margin-top: 30px;
+}
+
 .transport span {
   font-size: 14px;
   color: #323232;
@@ -2426,6 +2430,10 @@ input[name="c-person"]:checked + label {
 .transport__block-item {
   display: inline-block;
   padding: 0 10px;
+}
+
+.transport__block-item::before {
+  display: none !important;
 }
 
 .transport__block-item input {
@@ -3088,7 +3096,7 @@ input[name="t-amenities-3"]:checked + label::before {
 }
 
 .your-data {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .your-data p {
@@ -3130,6 +3138,7 @@ input[name="t-amenities-3"]:checked + label::before {
   padding: 0 30px;
   display: block;
   float: right;
+  font-family: "GothamProBold", sans-serif;
 }
 
 .dop-info textarea {
@@ -3147,4 +3156,115 @@ input[name="t-amenities-3"]:checked + label::before {
 
 .dop-info textarea:focus {
   border-bottom-color: #0088ed;
+}
+
+.clients-buttons {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.clients-buttons__first {
+  background-color: #008be9;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  display: inline-block;
+  width: auto;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+}
+
+.clients-buttons__first:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.clients-buttons__first:focus, .clients-buttons__first:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.clients-buttons__last {
+  background-color: transparent;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  display: inline-block;
+  width: auto;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  font-family: "GothamProMedium", sans-serif;
+}
+
+.clients-buttons__last:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.clients-buttons__last:focus, .clients-buttons__last:active {
+  text-decoration: none;
+  color: #000;
+}
+
+.clients-description {
+  text-align: center;
+}
+
+.clients-description p {
+  color: #878787;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+}
+
+.line {
+  background-color: #f4f5f5;
+  margin: 0;
+}
+
+.t-info__item-menu .ui-selectmenu-button.ui-button {
+  width: 150px;
+}
+
+.busines-block {
+  font-size: 0;
+  margin-top: 30px !important;
+}
+
+.busines-block__item {
+  font-size: 15px;
+  display: inline-block;
+  padding-left: 0 !important;
+  margin-right: 15px !important;
+  color: #878787 !important;
+  font-family: "GothamProMedium", sans-serif;
+  cursor: pointer;
+}
+
+.busines-block__item::before {
+  display: none !important;
+}
+
+.busines-block__item-active {
+  color: #0088ed !important;
+}
+
+.your-data-1 input {
+  width: 215px;
+}
+
+.t-info__item-menu-1 .ui-selectmenu-button.ui-button {
+  width: 336px;
+}
+
+.t-info__item-6 {
+  width: 226px;
 }

@@ -339,7 +339,7 @@
 											</div>
 											<div class="sequence__text">
 												<p>
-													Станьте постоянным<br>клиентом
+													Станьте постоянным<br>клиентом получайте<br>скидки
 												</p>
 											</div>
 										</div>
@@ -347,6 +347,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
+										<hr class="line">
 										<div class="transport">
 											<span>Выберите транспорт:</span>
 											<ul class="transport__block">
@@ -380,7 +381,7 @@
 												<input type="text" placeholder="Откуда">
 											</div>
 											<div class="t-addr__bottom">
-												<input type="text" placeholder="Укажите улицу, дом, квартиру (офис)">
+												<input type="text" placeholder="Если тебуется Забор. Укажите адрес">
 											</div>
 										</div>
 									</div>
@@ -393,7 +394,7 @@
 												<input type="text" placeholder="Куда">
 											</div>
 											<div class="t-addr__bottom">
-												<input type="text" placeholder="Укажите улицу, дом, квартиру (офис)">
+												<input type="text" placeholder="Если требуется Доставка. Укажите адрес">
 											</div>
 										</div>
 									</div>
@@ -464,36 +465,6 @@
 													<option>Выбрать из списка</option>
 												</select>
 											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="t-character">
-											<label>
-												Характер груза:
-											</label>
-											<select name="t-character" id="t-character">
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option selected="selected">Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="t-character">
-											<label>
-												Упаковать груз:
-											</label>
-											<select name="t-character-1" id="t-character-1">
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option selected="selected">Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-												<option>Выбрать из списка</option>
-											</select>
 										</div>
 									</div>
 								</div>
@@ -589,6 +560,18 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
+										<ul class="busines-block">
+											<li class="busines-block__item busines-block__item-active">
+												Юридическое лицо
+											</li>
+											<li class="busines-block__item">
+												Физическое лицо
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
 										<div class="t-info" style="padding-top: 40px;">
 											<div class="t-info__item t-info__item-bg">
 												<input type="text" placeholder="Контактное лицо (ФИО) *">
@@ -604,6 +587,110 @@
 											</div>
 											<div class="t-info__item">
 												<input type="text" placeholder="Email *">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-info" style="padding-top: 40px;">
+											<div class="t-info__item t-info__item-bg">
+												<input type="text" placeholder="Название компании">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="ИНН / КПП*">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item t-info__item-menu">
+												<select name="b-character-3" id="b-character-3">
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option selected="selected">Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="your-data">
+											<p>
+												Отправитель
+											</p>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<div class="your-data your-data-1">
+											<input type="text" placeholder="ООО &quot;Инвест профи&quot;" >
+											<button>
+												Вставить в форму
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="busines-block">
+											<li class="busines-block__item">
+												Юридическое лицо
+											</li>
+											<li class="busines-block__item busines-block__item-active">
+												Физическое лицо
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-info" style="padding-top: 40px;">
+											<div class="t-info__item t-info__item-bg">
+												<input type="text" placeholder="Контактное лицо (ФИО) *">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Телефон *">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Email *">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-info" style="padding-top: 40px;">
+											<div class="t-info__item t-info__item-menu-1">
+												<select name="b-character-4" id="b-character-4">
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option selected="selected">Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+												</select>
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Серия / Номер * ">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Дата выдачи">
 											</div>
 										</div>
 									</div>
@@ -1016,6 +1103,8 @@
 			$('#t-character-1').selectmenu();
 			$('#b-character-1').selectmenu();
 			$('#b-character-2').selectmenu();
+			$('#b-character-3').selectmenu();
+			$('#b-character-4').selectmenu();
 		});
 	</script>
 	<!-- End_Scripts -->
