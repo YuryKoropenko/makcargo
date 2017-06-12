@@ -2665,3 +2665,122 @@ strong
 
 .n-block__item-ni
 	padding-left: 20px
+
+.fiz-block
+	display: none
+
+.number-act
+	padding-top: 40px
+	input[type="text"]
+		height: 30px
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid #989898
+		text-align: center
+		font-size: 14px
+		width: 50%
+
+	input[type="button"]
+		background-color: #008be9
+		border: medium none
+		border-radius: 20px
+		color: #fff
+		display: inline-block
+		font-size: 14px
+		height: 40px
+		letter-spacing: 0.25px
+		line-height: 40px
+		padding: 0 30px
+		text-align: center
+		width: auto
+		margin-left: 10px
+
+.table-act
+	margin-right: 30px
+	td
+		color: #323232
+		font-family: "GothamProBold",sans-serif
+		font-size: 15px
+		line-height: 21px
+		text-transform: uppercase
+		padding-bottom: 20px
+		&:last-child
+			text-align: right
+			width: 40%
+		span
+			font-size: 24px
+			font-family: "GothamProBold",sans-serif
+			color: #008be9
+			&::after
+				content: 'руб./ кг'
+				text-transform: none
+				font-size: 15px
+				color: #323232
+				display: inline-block
+				padding-left: 5px
+
+.share
+	&__soc
+		padding: 25px 0
+		&-text
+			padding: 0 10px 16px
+			b
+				color: #323232
+				cursor: pointer
+				display: inline-block
+				font-size: 14px
+				text-transform: uppercase
+
+		&-block
+			font-size: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+		&-item
+			display: inline-block
+		&-link
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-moz-box-align: center
+			align-items: center
+			background-color: #454545
+			height: 24px
+			justify-content: center
+			width: 24px
+			i
+				font-size: 16px
+				color: #fff
+
+.card-news
+	@extend .clearfix
+	padding-bottom: 30px
+	&__left
+		float: left
+		a
+			color: #878787
+			font-family: "GothamProBold",sans-serif
+			font-size: 16px
+			line-height: 21px
+			text-transform: uppercase
+	&__right
+		float: right
+		color: #d8d9d9
+		a
+			color: #878787
+			font-family: "GothamProBold",sans-serif
+			font-size: 16px
+			line-height: 21px
+			text-transform: uppercase
+
+.card__bottom
+	padding-top: 40px
+	&-text
+		p
+			color: #323232
+			font-size: 12px

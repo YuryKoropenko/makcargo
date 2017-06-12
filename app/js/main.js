@@ -46,7 +46,11 @@ $(document).ready(function() {
 		});
 	}
 
-
+	/*tabs-blokc*/
+	$('.urid-tab').on('click', function() {
+		$('.busines-block__item').removeClass('busines-block__item-active');
+		
+	});
 
 
 	/*index-links*/

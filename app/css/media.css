@@ -61,6 +61,12 @@
   .t-info__item-big-1 input {
     width: 157px;
   }
+  .n-block__item {
+    padding-left: 250px;
+  }
+  .n-block__img {
+    width: 230px;
+  }
   /**/
 }
 
@@ -748,6 +754,38 @@
     position: static;
     width: 100%;
     margin-bottom: 20px;
+  }
+  .number-act input[type="text"] {
+    width: 100%;
+  }
+  .number-act input[type="button"] {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .table-act td {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+    padding-bottom: 0;
+  }
+  .table-act {
+    margin-right: 0;
+  }
+  .table-act td span {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .card-news__left,
+  .card-news__right {
+    width: 100%;
+    float: none;
+  }
+  .card-news {
+    padding-bottom: 16px;
+  }
+  .n-block__item {
+    padding: 0;
   }
   /**/
 }

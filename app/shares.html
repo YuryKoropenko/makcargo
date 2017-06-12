@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -260,8 +261,19 @@
 						<div class="page__p-title">
 							<div class="p-title">
 								<b>
-									Заявка на расчет грузоперевозки
+									Действующие акции
 								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hidden-xs hidden-sm">
+					<div class="col-md-12">
+						<div class="page__p-description">
+							<div class="p-description">
+								<p style="text-decoration: none; font-size: 16px;">
+									Введённые вами данные будут использованы для оформления документов при сдаче груза к перевозке. 
+								</p>
 							</div>
 						</div>
 					</div>
@@ -271,30 +283,42 @@
 						<div class="page__tabs hidden-sm hidden-xs">
 							<ul class="tabs">
 								<li class="tabs__item active">
-									Рассчет перевозки
+									Акции компании
 								</li><br>
 								<li class="tabs__item">
-									Оформить заявку
+									Новости грузоперевозок
 								</li><br>
-								<li class="tabs__item">
-									Оплата заказа
-								</li><br>
-								<li class="tabs__item">
-									Статус заказа
-								</li><br>
-								<li class="tabs__item">
-									Вопрос-ответ
-								</li><br>
-								<li class="tabs__item">
-									Документы и реквизиты
-								</li><br>
-								<li class="tabs__item">
-									Новости
-								</li><br>
-								<li class="tabs__item">
-									Акции
-								</li>
 							</ul>
+							<div class="join">
+								<div class="join__title">
+									<b>
+										Будьте в курсе последних<br>Акций и Новостей
+									</b>
+								</div>
+								<div class="join__search">
+									<input type="text" placeholder="Введите e-mail">
+									<input type="button" value="ОК">
+								</div>
+								<div class="join__soc">
+									<div class="join__soc-text">
+										<b>
+											ПРИСОЕДИНЯЙСя:
+										</b>
+									</div>
+									<ul class="join__soc-block">
+										<li class="join__soc-item">
+											<a href="#" class="join__soc-link">
+												<i class="fa fa-vk" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li class="join__soc-item">
+											<a href="#" class="join__soc-link">
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<div class="page__mob-tabs hidden-md hidden-lg">
 							<ul class="mob-tabs">
@@ -308,519 +332,134 @@
 						<div class="page__content">
 							<div class="content staff license sequence">
 								<div class="row">
-									<div class="col-md-4">
-										<div class="sequence__item">
-											<div class="sequence__numb">
-												<span>01</span>
-											</div>
-											<div class="sequence__text">
-												<p>
-													Заполните характеристики перевозимого  груза
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="sequence__item">
-											<div class="sequence__numb">
-												<span>02</span>
-											</div>
-											<div class="sequence__text">
-												<p>
-													Получите Расчет<br>на почту или по телефону
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="sequence__item">
-											<div class="sequence__numb">
-												<span>03</span>
-											</div>
-											<div class="sequence__text">
-												<p>
-													Станьте постоянным<br>клиентом получайте<br>скидки
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
 									<div class="col-md-12">
-										<hr class="line">
-										<div class="transport">
-											<span>Выберите транспорт:</span>
-											<ul class="transport__block">
+										<div class="transport vid-per" style="margin-top: 0;">
+											<ul class="transport__block" style="margin-top: 0;">
 												<li class="transport__block-item">
 													<input type="radio" checked name="s-transport" id="s-transport-1">
-													<label for="s-transport-1">Авиа</label>
+													<label for="s-transport-1">Все акции</label>
 												</li>
 												<li class="transport__block-item">
 													<input type="radio" name="s-transport" id="s-transport-2">
-													<label for="s-transport-2">Авто</label>
+													<label for="s-transport-2">Авиа перевозки</label>
 												</li>
 												<li class="transport__block-item">
 													<input type="radio" name="s-transport" id="s-transport-3">
-													<label for="s-transport-3">Ж/Д</label>
+													<label for="s-transport-3">Авто перевозки</label>
 												</li>
 												<li class="transport__block-item">
 													<input type="radio" name="s-transport" id="s-transport-4">
-													<label for="s-transport-4">Морские</label>
+													<label for="s-transport-4">Ж/Д</label>
+												</li>
+												<li class="transport__block-item">
+													<input type="radio" name="s-transport" id="s-transport-4">
+													<label for="s-transport-4">Морем Авиа перевозки</label>
+												</li>
+												<li class="transport__block-item">
+													<input type="radio" name="s-transport" id="s-transport-4">
+													<label for="s-transport-4">Авто перевозки</label>
+												</li>
+												<li class="transport__block-item">
+													<input type="radio" name="s-transport" id="s-transport-4">
+													<label for="s-transport-4">Авиа перевозки</label>
+												</li>
+												<li class="transport__block-item">
+													<input type="radio" name="s-transport" id="s-transport-4">
+													<label for="s-transport-4">Авто перевозки</label>
+												</li>
+												<li class="transport__block-item">
+													<input type="radio" name="s-transport" id="s-transport-4">
+													<label for="s-transport-4">Ж/Д</label>
+												</li>
+												<li class="transport__block-item">
+													<input type="radio" name="s-transport" id="s-transport-4">
+													<label for="s-transport-4">Морем</label>
 												</li>
 											</ul>
 										</div>
+										<hr class="line">
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-5">
-										<div class="t-addr">
-											<label for="">
-												Адрес отправителя
-											</label>
-											<div class="t-addr__item">
-												<input type="text" placeholder="Откуда">
+									<div class="col-md-12">
+										<div class="n-block">
+											<div class="n-block__item">
+												<div class="n-block__img">
+													<img src="img/news/1.jpg" alt="1">
+												</div>
+												<div class="n-block__text">
+													<div class="n-block__title">
+														<a href="#">
+															Бонусы постоянным клиентам
+														</a>
+													</div>
+													<br>
+													<div class="n-block__description">
+														<p>
+															Вы можете снизить стоимость перевозки, даже если обращаетесь в Макарго впервые. Мы получите бонусы которые не оставят сомнений доверить перевозку именно нам.<br><br>Чтобы получить скидку, оставьте свой телефон. 
+														</p>
+													</div>
+													<div class="number-act">
+														<input type="text" placeholder="Введите номер">
+														<input type="button" value="Отправить">
+													</div>
+												</div>
 											</div>
-											<div class="t-addr__bottom">
-												<input type="text" placeholder="Если тебуется Забор. Укажите адрес">
-											</div>
-										</div>
-									</div>
-									<div class="col-md-5 col-md-offset-2">
-										<div class="t-addr">
-											<label for="">
-												Адрес получателя
-											</label>
-											<div class="t-addr__item">
-												<input type="text" placeholder="Куда">
-											</div>
-											<div class="t-addr__bottom">
-												<input type="text" placeholder="Если требуется Доставка. Укажите адрес">
+											<div class="n-block__item">
+												<div class="n-block__img">
+													<img src="img/news/1.jpg" alt="1">
+												</div>
+												<div class="n-block__text">
+													<div class="n-block__title">
+														<a href="#">
+															спецпредложения по направлениям
+														</a>
+													</div>
+													<br>
+													<table class="table-act">
+														<tr>
+															<td>
+																Новосибирск - Мурманск
+															</td>
+															<td>
+																<span>51</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																Геническ - Тель-авив
+															</td>
+															<td>
+																<span>145</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																Тимбукту - Нибиру
+															</td>
+															<td>
+																<span>5678</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																Новоалександровка- 
+амстердам
+															</td>
+															<td>
+																<span>1</span>
+															</td>
+														</tr>
+													</table>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<div class="t-info">
-											<div class="t-info__item t-info__item-st">
-												<input type="text" placeholder="Мест">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-st">
-												<input type="text" placeholder="Вес (кг)">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-big-1">
-												<input type="text" placeholder="Д(м) / Ш(м) / В(м)">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Обьем (м3)">
-											</div>
-											<div class="t-info__item t-info__item-plus">
-												<button>+</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 20px;">
-											<div class="t-info__item">
-												<input type="text" placeholder="Дата отпраки">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Обьявленная стоимость">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-big">
-												<select name="b-character-1" id="b-character-1">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-big">
-												<select name="b-character-2" id="b-character-2">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-amenities">
-											<div class="t-amenities__title">
-												<b>
-													Предоставляем услуги
-												</b>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4">
-										<div class="t-amenities">
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-1" id="t-amenities-1">
-												<label for="t-amenities-1">
-													Экспресс-доставка
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-1" id="t-amenities-2">
-												<label for="t-amenities-2">
-													Экспресс-доставка
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-1" id="t-amenities-3">
-												<label for="t-amenities-3">
-													Экспресс-доставка
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="t-amenities">
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-2" id="t-amenities-4">
-												<label for="t-amenities-4">
-													Маркировка груза
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-2" id="t-amenities-5">
-												<label for="t-amenities-5">
-													Маркировка груза
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-2" id="t-amenities-6">
-												<label for="t-amenities-6">
-													Маркировка груза
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="t-amenities">
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-3" id="t-amenities-7">
-												<label for="t-amenities-7">
-													Отправка сопроводительных документов
-												</label>
-											</div>
-											<div class="t-amenities__item">
-												<input type="radio" name="t-amenities-3" id="t-amenities-8">
-												<label for="t-amenities-8">
-													Отправка сопроводительных документов
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-5">
-										<div class="your-data">
-											<p>
-												Заказчик (ваши данные)
-											</p>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="your-data">
-											<input type="text" placeholder="Если отправляли груз: Ваш id или телефон">
-											<button>
-												Войти
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<ul class="busines-block">
-											<li class="busines-block__item busines-block__item-active urid-tab">
-												Юридическое лицо
-											</li>
-											<li class="busines-block__item fiz-tab">
-												Физическое лицо
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="urid-block fac-block">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-bg">
-												<input type="text" placeholder="Контактное лицо (ФИО) *">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Телефон *">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Email *">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-bg">
-												<input type="text" placeholder="Название компании">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="ИНН / КПП*">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-menu">
-												<select name="b-character-3" id="b-character-3">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-								<div class="fiz-block fac-block">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-bg">
-												<input type="text" placeholder="Контактное лицо (ФИО) *">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Телефон *">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Email *">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-bg">
-												<input type="text" placeholder="Название компании">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="ИНН / КПП*">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-menu">
-												<select name="b-character-3" id="b-character-3">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-								<div class="row">
-									<div class="col-md-5">
-										<div class="your-data">
-											<p>
-												Отправитель
-											</p>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="your-data your-data-1">
-											<input type="text" placeholder="ООО &quot;Инвест профи&quot;" >
-											<button>
-												Вставить в форму
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<ul class="busines-block">
-											<li class="busines-block__item">
-												Юридическое лицо
-											</li>
-											<li class="busines-block__item busines-block__item-active">
-												Физическое лицо
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-bg">
-												<input type="text" placeholder="Контактное лицо (ФИО) *">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Телефон *">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Email *">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-menu-1">
-												<select name="b-character-4" id="b-character-4">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Серия / Номер * ">
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item">
-												<input type="text" placeholder="Дата выдачи">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-amenities">
-											<div class="t-amenities__title">
-												<b>
-													Информация о плательщике
-												</b>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="t-info t-info-nf" style="padding-top: 40px;">
-											<div class="t-info__item t-info__item-menu-1">
-												<select name="b-character-5" id="b-character-5">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-											<div class="t-info__item hidden-sm hidden-xs">
-												<div class="t-info__line"></div>
-											</div>
-											<div class="t-info__item t-info__item-menu">
-												<select name="b-character-6" id="b-character-6">
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option selected="selected">Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-													<option>Выбрать из списка</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="dop-info dop-info-bg">
-											<textarea name="" id="" cols="30" rows="10" placeholder="Банковские реквизиты плательщика: *"></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="dop-info dop-info-bg">
-											<textarea name="" id="" cols="30" rows="10" placeholder="Банковские реквизиты плательщика: *"></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="clients-description" style="padding-top: 40px;">
-											<p style="color: #f792b7;">
-												Внимание! Не все поля заполнены, или допущены ошибки при заполнении.<br>Исправьте данные в полях помеченным красным цветом и попробуйте отправить снова. 
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="clients-buttons" style="padding-top: 20px;">
-											<input type="button" class="clients-buttons__first" value="Оформить заказ">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="clients-description">
-											<p>
-												Нажимая на кнопку вы соглашаетесь на обработку и хранение указанной<br>Вами информации. А также подтверждаете то что Вы ознакомились с установленными<br>компанией "Макарго" условиями перевозки.
-											</p>
+										<div class="clients-buttons" style="padding-bottom: 0;">
+											<input type="button" class="clients-buttons__first" value="пОКАЗАТЬ ЕЩЕ" style="text-transform: uppercase;">
 										</div>
 									</div>
 								</div>
