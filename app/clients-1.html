@@ -561,16 +561,16 @@
 								<div class="row">
 									<div class="col-md-12">
 										<ul class="busines-block">
-											<li class="busines-block__item busines-block__item-active urid-tab">
+											<li class="busines-block__item-1 busines-block__item-1-active urid-tab-1">
 												Юридическое лицо
 											</li>
-											<li class="busines-block__item fiz-tab">
+											<li class="busines-block__item-1 fiz-tab-1">
 												Физическое лицо
 											</li>
 										</ul>
 									</div>
 								</div>
-								<div class="urid-block fac-block">
+								<div class="urid-block-1 fac-block-1">
 								<div class="row">
 									<div class="col-md-12">
 										<div class="t-info" style="padding-top: 40px;">
@@ -620,7 +620,7 @@
 									</div>
 								</div>
 								</div>
-								<div class="fiz-block fac-block">
+								<div class="fiz-block-1 fac-block-1">
 								<div class="row">
 									<div class="col-md-12">
 										<div class="t-info" style="padding-top: 40px;">
@@ -658,7 +658,7 @@
 												<div class="t-info__line"></div>
 											</div>
 											<div class="t-info__item t-info__item-menu">
-												<select name="b-character-3" id="b-character-3">
+												<select name="b-character-7" id="b-character-7">
 													<option>Выбрать из списка</option>
 													<option>Выбрать из списка</option>
 													<option selected="selected">Выбрать из списка</option>
@@ -690,15 +690,16 @@
 								<div class="row">
 									<div class="col-md-12">
 										<ul class="busines-block">
-											<li class="busines-block__item">
+											<li class="busines-block__item busines-block__item-active urid-tab">
 												Юридическое лицо
 											</li>
-											<li class="busines-block__item busines-block__item-active">
+											<li class="busines-block__item fiz-tab">
 												Физическое лицо
 											</li>
 										</ul>
 									</div>
 								</div>
+								<div class="urid-block fac-block">
 								<div class="row">
 									<div class="col-md-12">
 										<div class="t-info" style="padding-top: 40px;">
@@ -746,6 +747,57 @@
 											</div>
 										</div>
 									</div>
+								</div>
+								</div>
+								<div class="fiz-block fac-block">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-info" style="padding-top: 40px;">
+											<div class="t-info__item t-info__item-bg">
+												<input type="text" placeholder="Контактное лицо (ФИО) *">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Телефон *">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Email *">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="t-info" style="padding-top: 40px;">
+											<div class="t-info__item t-info__item-menu-1">
+												<select name="b-character-8" id="b-character-8">
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option selected="selected">Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+												</select>
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Серия / Номер * ">
+											</div>
+											<div class="t-info__item hidden-sm hidden-xs">
+												<div class="t-info__line"></div>
+											</div>
+											<div class="t-info__item">
+												<input type="text" placeholder="Дата выдачи">
+											</div>
+										</div>
+									</div>
+								</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
@@ -1201,6 +1253,8 @@
 			$('#b-character-4').selectmenu();
 			$('#b-character-5').selectmenu();
 			$('#b-character-6').selectmenu();
+			$('#b-character-7').selectmenu();
+			$('#b-character-8').selectmenu();
 		});
 	</script>
 	<!-- End_Scripts -->

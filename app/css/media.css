@@ -489,6 +489,7 @@
     line-height: 21px;
   }
   .feedback-popup,
+  .feedback-popup-ok,
   .calculation-popup {
     width: 100%;
     left: 0;
@@ -499,6 +500,19 @@
     -webkit-transform: none;
     box-sizing: border-box;
     padding: 15px 20px;
+  }
+  .feedback-popup-ok .feedback-popup__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
   .feedback-popup__button button {
     display: block;
@@ -786,6 +800,14 @@
   }
   .n-block__item {
     padding: 0;
+  }
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 520px) {
+  .lic-popup {
+    width: 80%;
   }
   /**/
 }

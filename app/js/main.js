@@ -129,12 +129,65 @@ $(document).ready(function() {
 		$(this).fadeOut();
 		$('.feedback-popup').fadeOut();
 		$('.calculation-popup').fadeOut();
+		$('.feedback-popup-ok').fadeOut();
 	});
 
 	$('.feedback-popup__close').on('click', function() {
 		$('.popup-bg').fadeOut();
 		$('.feedback-popup').fadeOut();
 		$('.calculation-popup').fadeOut();
+		$('.feedback-popup-ok').fadeOut();
+	});
+
+	/*ok*/
+	$('.feedback-popup__button button').on('click', function() {
+		$('.popup-bg').fadeIn();
+		$('.feedback-popup-ok').fadeIn();
+		return false;
+	});
+
+	/*lic-popu*/
+	$('.license__img').on('click', function() {
+		$('.bg-popup').fadeIn();
+		$(this).parent().children('.lic-popup').fadeIn();
+	});
+	$('.reviews__img').on('click', function() {
+		$('.bg-popup').fadeIn();
+		$(this).parent().children('.lic-popup').fadeIn();
+	});
+
+	/*tabs*/
+	$('.urid-tab').on('click', function() {
+		$('.busines-block__item').removeClass('busines-block__item-active');
+		$(this).addClass('busines-block__item-active');
+		$('.fac-block').hide();
+		$('.urid-block').show();
+	});
+	$('.fiz-tab').on('click', function() {
+		$('.busines-block__item').removeClass('busines-block__item-active');
+		$(this).addClass('busines-block__item-active');
+		$('.fac-block').hide();
+		$('.fiz-block').show();
+	});
+
+	/*tabs-1*/
+	$('.urid-tab-1').on('click', function() {
+		$('.busines-block__item-1').removeClass('busines-block__item-1-active');
+		$(this).addClass('busines-block__item-1-active');
+		$('.fac-block-1').hide();
+		$('.urid-block-1').show();
+	});
+	$('.fiz-tab-1').on('click', function() {
+		$('.busines-block__item-1').removeClass('busines-block__item-1-active');
+		$(this).addClass('busines-block__item-1-active');
+		$('.fac-block-1').hide();
+		$('.fiz-block-1').show();
+	});
+
+	/*bg-popup*/
+	$('.bg-popup').on('click', function() {
+		$('.bg-popup').fadeOut();
+		$('.lic-popup').fadeOut();
 	});
 
 	/*наши услуги*/
