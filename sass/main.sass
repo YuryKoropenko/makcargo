@@ -779,6 +779,7 @@ body
 		display: flex
 		justify-content: space-between
 	&__item
+		cursor: pointer
 	&__link
 		color: #323232
 		text-transform: uppercase
@@ -821,6 +822,7 @@ body
 		float: left
 		width: 808px
 		overflow: hidden
+		display: block !important
 		&-block
 			width: 100%
 			img
@@ -2847,3 +2849,60 @@ strong
 			letter-spacing: 0.25px
 			line-height: 24px
 			display: inline-block
+
+/*tab*/
+.our-services-vid
+	margin-top: -30px
+	@extend .clearfix
+	&__item
+		width: 100%
+		float: left
+		height: 258.5px
+		margin-top: 30px
+	&__link
+		width: 100%
+		height: 100%
+		display: block
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		&:hover
+			.our-services-vid__text
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				height: auto
+	&__text
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		height: 50px
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		background-color: rgba(0, 139, 233, 0.8)
+		span
+			color: #fff
+			display: inline-block
+			font-family: "GothamProBold",sans-serif
+			font-size: 14px
+			left: 0
+			letter-spacing: 0.25px
+			line-height: 19px
+			position: absolute
+			right: 0
+			text-align: center
+			text-transform: uppercase
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 2
