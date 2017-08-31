@@ -3880,3 +3880,24 @@ strong {
 .license__img-hover-wp a:hover {
   text-decoration: none;
 }
+
+/*new-select*/
+.new-select__wp .ui-selectmenu-button {
+  width: 300px;
+  float: left;
+}
+
+.new-select__wp .ui-state-default, .new-select__wp .ui-widget-content .ui-state-default, .new-select__wp .ui-widget-header .ui-state-default, .new-select__wp .ui-button, .new-select__wp html .ui-button.ui-state-disabled:hover, .new-select__wp html .ui-button.ui-state-disabled:active {
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #d8d9d9;
+  padding: 0;
+}
+
+.new-select__wp .ui-state-default .ui-selectmenu-text, .new-select__wp .ui-widget-content .ui-state-default .ui-selectmenu-text, .new-select__wp .ui-widget-header .ui-state-default .ui-selectmenu-text, .new-select__wp .ui-button .ui-selectmenu-text, .new-select__wp html .ui-button.ui-state-disabled:hover .ui-selectmenu-text, .new-select__wp html .ui-button.ui-state-disabled:active .ui-selectmenu-text {
+  font-size: 12px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.5);
+}

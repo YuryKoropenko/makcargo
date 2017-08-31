@@ -550,8 +550,14 @@
 										</div>
 									</div>
 									<div class="col-md-7">
-										<div class="your-data">
-											<input type="text" placeholder="Если отправляли груз: Ваш id или телефон">
+										<div class="your-data new-select__wp">
+											<select class="new-select">
+												<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option selected="selected">Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+													<option>Выбрать из списка</option>
+											</select>
 											<button>
 												Войти
 											</button>
@@ -1245,6 +1251,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$( function() {
+			$('.new-select').selectmenu();
 			$('#t-character').selectmenu();
 			$('#t-character-1').selectmenu();
 			$('#b-character-1').selectmenu();
